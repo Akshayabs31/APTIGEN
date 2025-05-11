@@ -192,6 +192,19 @@ function submitQuiz() {
 
   finalScore.innerText = score;
 
+  // Save results to localStorage
+  const currentUser = localStorage.getItem('currentUser');
+  if (currentUser) {
+    const resultKey = `${currentUser}_apsQuizResults`;
+    const results = JSON.parse(localStorage.getItem(resultKey)) || [];
+    results.push({
+      topic: localStorage.getItem('selectedCategory'),
+      score: score,
+      date: new Date().toLocaleString()
+    });
+    localStorage.setItem(resultKey, JSON.stringify(results));
+  }
+
   let highScore = parseInt(localStorage.getItem('highScore')) || 0;
   if (score > highScore) {
     localStorage.setItem('highScore', score);
