@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quiz Performance Dashboard</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,126 +19,56 @@
       --info: #560bad;
       --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
     }
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f0f2f5;
       color: var(--dark);
       line-height: 1.6;
     }
-    
+
     .dashboard {
       display: grid;
       grid-template-columns: 250px 1fr;
       min-height: 100vh;
     }
-    
-    /* Sidebar */
+
     .sidebar {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
       padding: 2rem 1rem;
       box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
     }
-    
-    .logo {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-bottom: 2rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    
-    .logo i {
-      color: var(--accent);
-    }
-    
-    .nav-menu {
-      list-style: none;
-      margin-top: 2rem;
-    }
-    
-    .nav-item {
-      margin-bottom: 1rem;
-    }
-    
-    .nav-link {
-      color: rgba(255, 255, 255, 0.8);
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      padding: 0.75rem 1rem;
-      border-radius: 8px;
-      transition: all 0.3s ease;
-    }
-    
-    .nav-link:hover, .nav-link.active {
-      background-color: rgba(255, 255, 255, 0.1);
-      color: white;
-    }
-    
-    .nav-link i {
-      width: 20px;
-      text-align: center;
-    }
-    
-    /* Main Content */
+
     .main-content {
       padding: 2rem;
     }
-    
+
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 2rem;
     }
-    
-    .user-info {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
+
+    .chart-container {
+      height: 300px;
+      margin-top: 1rem;
     }
-    
-    .user-avatar {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: var(--accent);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-weight: bold;
-      font-size: 1.25rem;
-    }
-    
-    .greeting h1 {
-      font-size: 1.5rem;
-      margin-bottom: 0.25rem;
-    }
-    
-    .greeting p {
-      color: #6c757d;
-    }
-    
-    /* Dashboard Grid */
-    .dashboard-grid {
+
+    .chart-row {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: 1fr 1fr;
       gap: 1.5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
     }
-    
-    /* Cards */
+
     .card {
       background: white;
       border-radius: 12px;
@@ -145,430 +76,129 @@
       box-shadow: var(--card-shadow);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
+
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     }
-    
-    .card-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
-    
+
     .card-title {
       font-size: 1.25rem;
       font-weight: 600;
       color: var(--dark);
     }
-    
-    .card-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
-    
-    .card-icon.primary {
-      background-color: var(--primary);
-    }
-    
-    .card-icon.success {
-      background-color: var(--success);
-    }
-    
-    .card-icon.warning {
-      background-color: var(--warning);
-    }
-    
-    /* Performance List */
-    .performance-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0.75rem 0;
-      border-bottom: 1px solid #eee;
-    }
-    
-    .performance-item:last-child {
-      border-bottom: none;
-    }
-    
-    .topic-name {
-      font-weight: 500;
-    }
-    
-    .topic-stats {
-      display: flex;
-      gap: 1rem;
-    }
-    
-    .stat-badge {
-      background-color: #f0f0f0;
-      padding: 0.25rem 0.5rem;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-    }
-    
-    .stat-badge.attempts {
-      color: var(--info);
-      background-color: rgba(86, 11, 173, 0.1);
-    }
-    
-    .stat-badge.score {
-      color: var(--success);
-      background-color: rgba(76, 201, 240, 0.1);
-    }
-    
-    /* Chart Container */
-    .chart-container {
-      height: 300px;
-      margin-top: 1rem;
-    }
-    
-    /* Two-column layout for charts */
-    .chart-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    
-    @media (max-width: 768px) {
-      .dashboard {
-        grid-template-columns: 1fr;
-      }
-      
-      .sidebar {
-        display: none;
-      }
-      
-      .chart-row {
-        grid-template-columns: 1fr;
-      }
-    }
   </style>
 </head>
+
 <body>
   <div class="dashboard">
-    <!-- Sidebar -->
     <aside class="sidebar">
       <div class="logo">
         <i class="fas fa-brain"></i>
         <span>QuizMaster</span>
       </div>
-      
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <a href="#" class="nav-link active">
-            <i class="fas fa-tachometer-alt"></i>
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-book"></i>
-            <span>Topics</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-chart-line"></i>
-            <span>Progress</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-cog"></i>
-            <span>Settings</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">
-            <i class="fas fa-sign-out-alt"></i>
-            <span>Logout</span>
-          </a>
-        </li>
+      <ul class="menu">
+        <li><a href="#">Dashboard</a></li>
       </ul>
     </aside>
-    
-    <!-- Main Content -->
     <main class="main-content">
       <div class="header">
-        <div class="user-info">
-          <div class="user-avatar" id="userAvatar"></div>
-          <div class="greeting">
-            <h1>Welcome back, <span id="userName"></span>!</h1>
-            <p>Your quiz performance dashboard</p>
-          </div>
+        <div>
+          <h1>Welcome, <span id="userName"></span></h1>
+          <p>Your quiz performance dashboard</p>
         </div>
       </div>
-      
-      <div class="dashboard-grid">
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Total Quizzes Taken</h2>
-            <div class="card-icon primary">
-              <i class="fas fa-clipboard-list"></i>
-            </div>
-          </div>
-          <p id="totalQuizzes" class="text-3xl font-bold">0</p>
-        </div>
-        
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Average Score</h2>
-            <div class="card-icon success">
-              <i class="fas fa-star"></i>
-            </div>
-          </div>
-          <p id="averageScore" class="text-3xl font-bold">0%</p>
-        </div>
-        
-        <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Topics Mastered</h2>
-            <div class="card-icon warning">
-              <i class="fas fa-layer-group"></i>
-            </div>
-          </div>
-          <p id="topicsMastered" class="text-3xl font-bold">0</p>
-        </div>
-      </div>
-      
-      <!-- Chart Row 1 -->
+
       <div class="chart-row">
         <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Average Scores by Topic</h2>
-            <i class="fas fa-chart-bar text-gray-400"></i>
-          </div>
-          <div class="chart-container">
-            <canvas id="topicChart"></canvas>
-          </div>
+          <h2 class="card-title">General Quiz Performance</h2>
+          <canvas id="generalQuizChart"></canvas>
         </div>
-        
         <div class="card">
-          <div class="card-header">
-            <h2 class="card-title">Score Progression</h2>
-            <i class="fas fa-chart-line text-gray-400"></i>
-          </div>
-          <div class="chart-container">
-            <canvas id="scoreChart"></canvas>
-          </div>
+          <h2 class="card-title">APS Quiz Performance</h2>
+          <canvas id="apsQuizChart"></canvas>
         </div>
       </div>
-      
-      <!-- Detailed Performance -->
+
       <div class="card">
-        <div class="card-header">
-          <h2 class="card-title">Detailed Topic Performance</h2>
-          <i class="fas fa-list-ul text-gray-400"></i>
-        </div>
-        <ul id="performanceList" class="performance-list"></ul>
+        <h2 class="card-title">Detailed Topic Performance</h2>
+        <canvas id="topicPerformanceChart"></canvas>
       </div>
     </main>
   </div>
 
-  <script>
-    const user = localStorage.getItem("currentUser");
-    if (!user) {
-      document.body.innerHTML = `
-        <div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column; gap: 1rem;">
-          <h2 style="color: var(--warning);">No user login found</h2>
-          <p>Please log in to access the dashboard</p>
-          <a href="login.html" style="background: var(--primary); color: white; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none;">
-            Go to Login
-          </a>
-        </div>
-      `;
-    } else {
-      // Set user info
-      document.getElementById("userName").textContent = user;
-      document.getElementById("userAvatar").textContent = user.charAt(0).toUpperCase();
-      
-      const key = `${user}_quizResults`;
-      const results = JSON.parse(localStorage.getItem(key)) || [];
-      const performanceList = document.getElementById("performanceList");
-      const topicStats = {};
-      let totalScore = 0;
-      let totalQuizzes = results.length;
-
-      // Calculate topic-wise stats
-      results.forEach(result => {
-        if (!topicStats[result.topic]) {
-          topicStats[result.topic] = {
-            attempts: 0,
-            totalScore: 0,
-            scores: [],
-            dates: []
-          };
-        }
-        topicStats[result.topic].attempts++;
-        topicStats[result.topic].totalScore += result.score;
-        topicStats[result.topic].scores.push(result.score);
-        topicStats[result.topic].dates.push(result.date.split(",")[0]);
-        totalScore += result.score;
-      });
-
-      // Update summary cards
-      document.getElementById("totalQuizzes").textContent = totalQuizzes;
-      
-      const topicsCount = Object.keys(topicStats).length;
-      document.getElementById("topicsMastered").textContent = topicsCount;
-      
-      const averageScore = totalQuizzes > 0 ? (totalScore / totalQuizzes).toFixed(1) : 0;
-      document.getElementById("averageScore").textContent = `${averageScore}%`;
-
-      // Prepare data for charts
-      const topicLabels = Object.keys(topicStats);
-      const topicAverages = topicLabels.map(topic => 
-        (topicStats[topic].totalScore / topicStats[topic].attempts).toFixed(1)
-      );
-      
-      // Sort topics by average score (highest first)
-      const sortedTopics = topicLabels.map(topic => ({
-        topic,
-        average: topicStats[topic].totalScore / topicStats[topic].attempts
-      })).sort((a, b) => b.average - a.average);
-      
-      const sortedLabels = sortedTopics.map(t => t.topic);
-      const sortedAverages = sortedTopics.map(t => t.average.toFixed(1));
-
-      // Create Topic Chart (Bar Chart)
-      new Chart(document.getElementById("topicChart"), {
-        type: "bar",
-        data: {
-          labels: sortedLabels,
-          datasets: [{
-            label: "Average Score %",
-            data: sortedAverages,
-            backgroundColor: topicLabels.map((_, i) => 
-              `hsl(${i * (360 / topicLabels.length)}, 70%, 60%)`
-            ),
-            borderColor: topicLabels.map((_, i) => 
-              `hsl(${i * (360 / topicLabels.length)}, 70%, 40%)`
-            ),
-            borderWidth: 1
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: { display: false },
-            tooltip: {
-              callbacks: {
-                label: function(context) {
-                  const topic = context.label;
-                  const attempts = topicStats[topic].attempts;
-                  return `Avg: ${context.raw}% (${attempts} attempt${attempts > 1 ? 's' : ''})`;
-                }
-              }
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              max: 100,
-              title: {
-                display: true,
-                text: 'Score %'
-              }
-            },
-            x: {
-              title: {
-                display: true,
-                text: 'Topics'
-              }
-            }
-          }
-        }
-      });
-
-      // Create Score Progression Chart (Line Chart)
-      new Chart(document.getElementById("scoreChart"), {
-        type: "line",
-        data: {
-          labels: results.map((r, i) => `Attempt ${i+1}`),
-          datasets: [{
-            label: "Quiz Scores",
-            data: results.map(r => r.score),
-            borderColor: "#4361ee",
-            backgroundColor: "rgba(67, 97, 238, 0.1)",
-            fill: true,
-            tension: 0.4,
-            pointBackgroundColor: "#3f37c9",
-            pointBorderColor: "#fff",
-            pointHoverRadius: 6,
-            pointRadius: 4,
-            borderWidth: 2
-          }]
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            tooltip: {
-              callbacks: {
-                afterLabel: function(context) {
-                  const result = results[context.dataIndex];
-                  return `Topic: ${result.topic}\nDate: ${result.date.split(",")[0]}`;
-                }
-              }
-            }
-          },
-          scales: {
-            y: {
-              beginAtZero: true,
-              max: 100,
-              title: {
-                display: true,
-                text: 'Score %'
-              }
-            },
-            x: {
-              title: {
-                display: true,
-                text: 'Quiz Attempts'
-              }
-            }
-          }
-        }
-      });
-
-      // Show detailed topic performance
-      sortedTopics.forEach(topicData => {
-        const topic = topicData.topic;
-        const stats = topicStats[topic];
-        const avgScore = (stats.totalScore / stats.attempts).toFixed(1);
-        
-        const item = document.createElement("li");
-        item.className = "performance-item";
-        item.innerHTML = `
-          <span class="topic-name">${topic}</span>
-          <div class="topic-stats">
-            <span class="stat-badge attempts">
-              <i class="fas fa-redo"></i>
-              ${stats.attempts} attempt${stats.attempts > 1 ? 's' : ''}
-            </span>
-            <span class="stat-badge score">
-              <i class="fas fa-star"></i>
-              ${avgScore}% average
-            </span>
-          </div>
-        `;
-        performanceList.appendChild(item);
-      });
-    }
-  </script>
+ 
 </body>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+  const userName = localStorage.getItem("currentUser") || "Guest";
+  document.getElementById("userName").textContent = userName;
+
+  const generalQuizResults = JSON.parse(localStorage.getItem(`${userName}_generalQuizResults`)) || [];
+  const apsQuizResults = JSON.parse(localStorage.getItem(`${userName}_apsQuizResults`)) || [];
+
+  const aggregateResults = (results) => {
+    const topicStats = {};
+    results.forEach((result) => {
+      if (!topicStats[result.topic]) {
+        topicStats[result.topic] = { score: 0, attempts: 0 };
+      }
+      topicStats[result.topic].score += result.score;
+      topicStats[result.topic].attempts += 1;
+    });
+    return topicStats;
+  };
+
+  const renderChart = (ctx, labels, data, title) => {
+    new Chart(ctx, {
+      type: "bar",
+      data: {
+        labels,
+        datasets: [{
+          label: title,
+          data,
+          backgroundColor: "rgba(75, 192, 192, 0.2)",
+          borderColor: "rgba(75, 192, 192, 1)",
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: { display: false },
+          title: { display: true, text: title }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: { display: true, text: "Scores" }
+          }
+        }
+      }
+    });
+  };
+
+  const generalStats = aggregateResults(generalQuizResults);
+  const apsStats = aggregateResults(apsQuizResults);
+
+  const generalTopics = Object.keys(generalStats);
+  const generalScores = generalTopics.map(topic => generalStats[topic].score / generalStats[topic].attempts);
+
+  const apsTopics = Object.keys(apsStats);
+  const apsScores = apsTopics.map(topic => apsStats[topic].score / apsStats[topic].attempts);
+
+  renderChart(document.getElementById("generalQuizChart").getContext("2d"), generalTopics, generalScores, "General Quiz");
+  renderChart(document.getElementById("apsQuizChart").getContext("2d"), apsTopics, apsScores, "APS Quiz");
+
+  const allTopics = [...new Set([...generalTopics, ...apsTopics])];
+  const topicScores = allTopics.map(topic => {
+    const generalScore = generalStats[topic]?.score || 0;
+    const apsScore = apsStats[topic]?.score || 0;
+    const attempts = (generalStats[topic]?.attempts || 0) + (apsStats[topic]?.attempts || 0);
+    return attempts > 0 ? (generalScore + apsScore) / attempts : 0;
+  });
+
+  renderChart(document.getElementById("topicPerformanceChart").getContext("2d"), allTopics, topicScores, "Overall Topic Performance");
+});
+  </script>
 </html>
