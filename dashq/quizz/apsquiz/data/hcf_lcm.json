@@ -1,0 +1,177 @@
+[
+    {
+        "question": "The product of two numbers is 1200 and their HCF is 10. What is their LCM?",
+        "options": ["120", "1200", "100", "200"],
+        "answer": "120",
+        "explanation": "The product of two numbers = HCF × LCM. Therefore, LCM = Product / HCF = 1200 / 10 = 120."
+    },
+    {
+        "question": "Find the greatest number that will divide 60, 75, and 90 leaving the same remainder in each case.",
+        "options": ["5", "10", "15", "20"],
+        "answer": "15",
+        "explanation": "The required number is the HCF of the differences of the given numbers. Differences: 75-60 = 15, 90-75 = 15, 90-60 = 30. HCF of 15 and 30 is 15."
+    },
+    {
+        "question": "The HCF of two numbers is 5, and their LCM is 150. If one number is 25, what is the other number?",
+        "options": ["30", "35", "40", "45"],
+        "answer": "30",
+        "explanation": "Product of two numbers = HCF × LCM. Let the other number be x. Then, 25 × x = 5 × 150 → x = 30."
+    },
+    {
+        "question": "The LCM of two numbers is 60, and their HCF is 12. If one number is 12, what is the other number?",
+        "options": ["48", "36", "24", "60"],
+        "answer": "60",
+        "explanation": "Product of two numbers = HCF × LCM. Let the other number be x. Then, 12 × x = 12 × 60 → x = 60."
+    },
+    {
+        "question": "Find the least number which, when divided by 12, 15, and 20, leaves a remainder of 7 in each case.",
+        "options": ["67", "87", "97", "107"],
+        "answer": "67",
+        "explanation": "The required number is of the form LCM(12, 15, 20) × k + 7. LCM of 12, 15, and 20 is 60. The smallest such number is 60 × 1 + 7 = 67."
+    },
+    {
+        "question": "The HCF of 120, 144, and 180 is:",
+        "options": ["12", "24", "36", "48"],
+        "answer": "12",
+        "explanation": "The prime factorizations are: 120 = 2^3 × 3 × 5, 144 = 2^4 × 3^2, 180 = 2^2 × 3^2 × 5. The HCF is 2^2 × 3 = 12."
+    },
+    {
+        "question": "Find the smallest number which, when divided by 18, 24, and 30, leaves no remainder.",
+        "options": ["180", "120", "240", "360"],
+        "answer": "360",
+        "explanation": "The required number is the LCM of 18, 24, and 30. Prime factorizations: 18 = 2 × 3^2, 24 = 2^3 × 3, 30 = 2 × 3 × 5. LCM = 2^3 × 3^2 × 5 = 360."
+    },
+    {
+        "question": "The HCF of 84 and 108 is:",
+        "options": ["12", "18", "24", "36"],
+        "answer": "12",
+        "explanation": "Prime factorizations: 84 = 2^2 × 3 × 7, 108 = 2^2 × 3^3. The HCF is 2^2 × 3 = 12."
+    },
+    {
+        "question": "The sum of two numbers is 48, and their HCF is 8. How many such pairs are possible?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "2",
+        "explanation": "Let the numbers be 8a and 8b (where a and b are coprime). Since their sum is 48, a + b = 6. Possible pairs of (a, b) are (1, 5) and (2, 4)."
+    },
+    {
+        "question": "The product of two numbers is 336, and their LCM is 84. What is their HCF?",
+        "options": ["2", "4", "6", "8"],
+        "answer": "4",
+        "explanation": "Product of two numbers = HCF × LCM. Let their HCF be x. Then, x × 84 = 336 → x = 4."
+    },
+    {
+        "question": "The LCM of two numbers is 120, and their HCF is 10. If one of the numbers is 30, what is the other number?",
+        "options": ["20", "40", "50", "60"],
+        "answer": "40",
+        "explanation": "Product of two numbers = HCF × LCM. Let the other number be x. Then, 30 × x = 10 × 120 → x = 40."
+    },
+    
+        {
+            "question": "Find the smallest number which when divided by 28, 42, and 56 leaves a remainder of 8 in each case.",
+            "options": ["112", "120", "128", "136"],
+            "answer": "136",
+            "explanation": "The required number is LCM(28, 42, 56) + 8. LCM of 28, 42, and 56 is 120. Adding the remainder gives 120 + 8 = 136."
+        },
+        {
+            "question": "The LCM of two numbers is 180 and their HCF is 6. If one of the numbers is 30, what is the other number?",
+            "options": ["36", "45", "54", "60"],
+            "answer": "36",
+            "explanation": "Product of two numbers = HCF × LCM. Let the other number be x. Then, 30 × x = 6 × 180 → x = 36."
+        },
+        {
+            "question": "Find the largest number that divides 624, 936, and 1248 exactly.",
+            "options": ["48", "156", "312", "624"],
+            "answer": "312",
+            "explanation": "The required number is HCF(624, 936, 1248). Prime factorizations: 624 = 2^4 × 3 × 13, 936 = 2^3 × 3^2 × 13, 1248 = 2^4 × 3 × 13. HCF = 2^3 × 3 × 13 = 312."
+        },
+        {
+            "question": "What is the smallest number divisible by both 18 and 32?",
+            "options": ["144", "288", "96", "72"],
+            "answer": "288",
+            "explanation": "The required number is LCM(18, 32). Prime factorizations: 18 = 2 × 3^2, 32 = 2^5. LCM = 2^5 × 3^2 = 288."
+        },
+        {
+            "question": "If the HCF of two numbers is 18 and their LCM is 540, what is the product of the two numbers?",
+            "options": ["9720", "540", "3240", "1000"],
+            "answer": "9720",
+            "explanation": "Product of two numbers = HCF × LCM = 18 × 540 = 9720."
+        },
+        {
+            "question": "The LCM of two numbers is 60 and their HCF is 5. If one of the numbers is 15, what is the other number?",
+            "options": ["15", "20", "25", "30"],
+            "answer": "20",
+            "explanation": "Product of two numbers = HCF × LCM. Let the other number be x. Then, 15 × x = 5 × 60 → x = 20."
+        },
+        {
+            "question": "What is the least number that is a multiple of both 12 and 18 and ends with the digit 4?",
+            "options": ["84", "144", "324", "36"],
+            "answer": "324",
+            "explanation": "The least number divisible by 12 and 18 is LCM(12, 18) = 36. The smallest multiple of 36 that ends with 4 is 324."
+        },
+        {
+            "question": "A number is divisible by 36 and 45. By what other number must it also be divisible?",
+            "options": ["180", "90", "72", "60"],
+            "answer": "180",
+            "explanation": "The number must be divisible by LCM(36, 45). Prime factorizations: 36 = 2^2 × 3^2, 45 = 3^2 × 5. LCM = 2^2 × 3^2 × 5 = 180."
+        },
+        {
+            "question": "The HCF of 396 and 462 is:",
+            "options": ["6", "12", "18", "24"],
+            "answer": "6",
+            "explanation": "Prime factorizations: 396 = 2^2 × 3^2 × 11, 462 = 2 × 3 × 7 × 11. The HCF is 2 × 3 × 11 = 66."
+        },
+        {
+            "question": "The product of two numbers is 240 and their HCF is 8. What is their LCM?",
+            "options": ["60", "30", "40", "15"],
+            "answer": "30",
+            "explanation": "The relationship is HCF × LCM = Product of the numbers. LCM = 240 ÷ 8 = 30."
+        },
+        {
+            "question": "How many numbers between 1 and 100 are divisible by both 3 and 5?",
+            "options": ["6", "10", "12", "15"],
+            "answer": "6",
+            "explanation": "Numbers divisible by both 3 and 5 are divisible by LCM(3, 5) = 15. The numbers are 15, 30, 45, 60, 75, and 90. Hence, there are 6 numbers."
+        },
+        {
+            "question": "Find the greatest number that divides 1002, 1206, and 1404 leaving the same remainder in each case.",
+            "options": ["102", "204", "306", "408"],
+            "answer": "204",
+            "explanation": "The required number is HCF(1002-1206, 1206-1404). HCF of 204 and 204 is 204."
+        },
+        {
+            "question": "The sum of two numbers is 72, and their HCF is 8. How many such pairs of numbers are possible?",
+            "options": ["1", "2", "3", "4"],
+            "answer": "2",
+            "explanation": "Let the numbers be 8a and 8b (where a and b are co-prime). Since their sum is 72, a + b = 9. Possible pairs of (a, b) are (1, 8) and (3, 6)."
+        },
+        {
+            "question": "The LCM of 72 and 108 is:",
+            "options": ["216", "108", "144", "72"],
+            "answer": "216",
+            "explanation": "Prime factorizations: 72 = 2^3 × 3^2, 108 = 2^2 × 3^3. LCM = 2^3 × 3^3 = 216."
+        },
+        {
+            "question": "Find the least number which when divided by 8, 10, and 12 leaves a remainder of 7 in each case.",
+            "options": ["247", "167", "87", "107"],
+            "answer": "247",
+            "explanation": "The required number is LCM(8, 10, 12) + 7. Prime factorizations: LCM = 120. Adding the remainder gives 120 × 2 + 7 = 247."
+        },
+        {
+            "question": "The greatest 4-digit number divisible by both 12 and 15 is:",
+            "options": ["9960", "9900", "9840", "9720"],
+            "answer": "9960",
+            "explanation": "The required number is the largest 4-digit number divisible by LCM(12, 15). LCM = 60. Largest 4-digit number divisible by 60 is 9960."
+        },
+        {
+            "question": "The HCF of two numbers is 4, and their LCM is 48. One of the numbers is 16. Find the other number.",
+            "options": ["8", "12", "24", "36"],
+            "answer": "12",
+            "explanation": "Product of two numbers = HCF × LCM. Let the other number be x. Then, 16 × x = 4 × 48 → x = 12."
+        },
+        {
+            "question": "How many trailing zeroes are there in 100! (100 factorial)?",
+            "options": ["20", "24", "25", "30"],
+            "answer": "24",
+            "explanation": "Trailing zeroes are determined by the number of 5s in the prime factorization of 100!. Count: 100/5 + 100/25 = 20 + 4 = 24."
+        }
+    ]

@@ -1,0 +1,122 @@
+[
+    {
+        "question": "The following table shows the sales (in units) of different car models in a showroom over five months:\n\n| Model | Jan | Feb | Mar | Apr | May |\n|-------|-----|-----|-----|-----|-----|\n| A     | 50  | 60  | 70  | 80  | 90  |\n| B     | 40  | 50  | 60  | 70  | 80  |\n| C     | 30  | 40  | 50  | 60  | 70  |\n\nWhat is the total sales of Model A over the five months?",
+        "options": ["300", "350", "400", "450"],
+        "answer": "350",
+        "explanation": "Add the sales of Model A: 50 + 60 + 70 + 80 + 90 = 350."
+    },
+    {
+        "question": "The following pie chart shows the percentage distribution of expenses in a household:\n\n- Rent: 40%\n- Food: 30%\n- Utilities: 20%\n- Miscellaneous: 10%\n\nIf the total monthly income is $2000, what is the amount spent on food?",
+        "options": ["$400", "$500", "$600", "$700"],
+        "answer": "$600",
+        "explanation": "Amount spent on food = 30% of $2000 = (30/100) × 2000 = $600."
+    },
+    {
+        "question": "The following bar graph shows the production (in tons) of a factory over four years:\n\n| Year | 2018 | 2019 | 2020 | 2021 |\n|------|------|------|------|------|\n| Tons | 200  | 250  | 300  | 350  |\n\nWhat is the average production over the four years?",
+        "options": ["250 tons", "275 tons", "300 tons", "325 tons"],
+        "answer": "275 tons",
+        "explanation": "Average production = (200 + 250 + 300 + 350) / 4 = 1100 / 4 = 275 tons."
+    },
+    {
+        "question": "The following line graph shows the temperature (in °C) of a city over five days:\n\n| Day   | Mon | Tue | Wed | Thu | Fri |\n|-------|-----|-----|-----|-----|-----|\n| Temp  | 25  | 28  | 30  | 32  | 35  |\n\nWhat is the increase in temperature from Monday to Friday?",
+        "options": ["5°C", "7°C", "10°C", "12°C"],
+        "answer": "10°C",
+        "explanation": "Increase in temperature = 35°C (Friday) - 25°C (Monday) = 10°C."
+    },
+    {
+        "question": "The following table shows the marks obtained by a student in five subjects:\n\n| Subject  | Math | Science | English | History | Art |\n|----------|------|---------|---------|---------|-----|\n| Marks    | 80   | 70      | 90      | 60      | 50  |\n\nWhat is the total marks obtained by the student?",
+        "options": ["320", "340", "350", "360"],
+        "answer": "350",
+        "explanation": "Total marks = 80 + 70 + 90 + 60 + 50 = 350."
+    },
+    {
+        "question": "The pie chart below shows the distribution of employees in a company department-wise:\n\n- HR: 20%\n- Sales: 40%\n- IT: 30%\n- Admin: 10%\n\nIf there are 500 employees in the company, how many employees are in the HR department?",
+        "options": ["50", "100", "150", "200"],
+        "answer": "100",
+        "explanation": "Number of employees in HR = 20% of 500 = (20/100) × 500 = 100."
+    },
+    {
+        "question": "The following bar chart shows the monthly expenditure (in $) of an individual:\n\n| Month | Jan | Feb | Mar | Apr | May |\n|-------|-----|-----|-----|-----|-----|\n| Expen | 400 | 500 | 600 | 700 | 800 |\n\nWhat is the total expenditure over the five months?",
+        "options": ["$2500", "$2600", "$2700", "$2800"],
+        "answer": "$3000",
+        "explanation": "Total expenditure = 400 + 500 + 600 + 700 + 800 = $3000."
+    },
+    {
+        "question": "The following table shows the population (in millions) of five countries:\n\n| Country | A   | B   | C   | D   | E   |\n|---------|-----|-----|-----|-----|-----|\n| Populn  | 50  | 60  | 70  | 80  | 90  |\n\nWhat is the average population of the five countries?",
+        "options": ["60 million", "70 million", "80 million", "90 million"],
+        "answer": "70 million",
+        "explanation": "Average population = (50 + 60 + 70 + 80 + 90) / 5 = 350 / 5 = 70 million."
+    },
+    {
+        "question": "The following line graph shows the rainfall (in mm) over six months:\n\n| Month | Jan | Feb | Mar | Apr | May | Jun |\n|-------|-----|-----|-----|-----|-----|-----|\n| Rain  | 50  | 60  | 70  | 80  | 90  | 100 |\n\nWhat is the total rainfall over the six months?",
+        "options": ["450 mm", "460 mm", "470 mm", "480 mm"],
+        "answer": "450 mm",
+        "explanation": "Total rainfall = 50 + 60 + 70 + 80 + 90 + 100 = 450 mm."
+    },
+    {
+        "question": "The following table shows the revenue (in $000) of a company over four quarters:\n\n| Quarter | Q1  | Q2  | Q3  | Q4  |\n|---------|-----|-----|-----|-----|\n| Revenue | 100 | 150 | 200 | 250 |\n\nWhat is the percentage increase in revenue from Q1 to Q4?",
+        "options": ["100%", "125%", "150%", "200%"],
+        "answer": "150%",
+        "explanation": "Percentage increase = [(250 - 100) / 100] × 100 = 150%."
+    },
+  {
+            "question": "The following table shows the sales data (in $000) of three products over four years:\n\n| Year | Product A | Product B | Product C |\n|------|-----------|-----------|-----------|\n| 2018 | 200       | 150       | 180       |\n| 2019 | 220       | 160       | 200       |\n| 2020 | 250       | 180       | 210       |\n| 2021 | 300       | 200       | 250       |\n\nWhat is the total sales of all products over the four years?",
+            "options": ["$2500K", "$2600K", "$2700K", "$2800K"],
+            "answer": "$2700K",
+            "explanation": "Total sales = (200+220+250+300) + (150+160+180+200) + (180+200+210+250) = $2700K."
+        },
+        {
+            "question": "The following pie chart shows the percentage distribution of investment in five sectors:\n\n- Tech: 35%\n- Health: 25%\n- Finance: 20%\n- Energy: 10%\n- Retail: 10%\n\nIf the total investment is $2 million, what is the difference in the amount invested in Tech and Health?",
+            "options": ["$150K", "$200K", "$250K", "$300K"],
+            "answer": "$200K",
+            "explanation": "Investment in Tech = 35% of $2M = $700K. Investment in Health = 25% of $2M = $500K. Difference = $700K - $500K = $200K."
+        },
+        {
+            "question": "The following bar graph shows the profit (in $000) of a company over six months:\n\n| Month | Jan | Feb | Mar | Apr | May | Jun |\n|-------|-----|-----|-----|-----|-----|-----|\n| Profit| 200 | 250 | 300 | 350 | 400 | 450 |\n\nWhat is the percentage increase in profit from January to June?",
+            "options": ["100%", "125%", "150%", "200%"],
+            "answer": "125%",
+            "explanation": "Percentage increase = [(450 - 200) / 200] × 100 = 125%."
+        },
+        {
+            "question": "The following line graph shows the population growth (in millions) of a city over five years:\n\n| Year | 2017 | 2018 | 2019 | 2020 | 2021 |\n|------|------|------|------|------|------|\n| Populn| 2.5  | 2.8  | 3.2  | 3.6  | 4.0  |\n\nWhat is the average annual growth rate over the five years?",
+            "options": ["10%", "12%", "14%", "16%"],
+            "answer": "12%",
+            "explanation": "Growth rate = [(Final value - Initial value) / Initial value] / Years × 100 = [(4.0 - 2.5) / 2.5] / 5 × 100 = 12%."
+        },
+        {
+            "question": "The following table shows the production data (in tons) of a factory over five months:\n\n| Month | Jan | Feb | Mar | Apr | May |\n|-------|-----|-----|-----|-----|-----|\n| Tons  | 500 | 550 | 600 | 650 | 700 |\n\nIf the production cost per ton is $100, what is the total cost of production over the five months?",
+            "options": ["$300K", "$310K", "$320K", "$330K"],
+            "answer": "$300K",
+            "explanation": "Total production = 500 + 550 + 600 + 650 + 700 = 3000 tons. Total cost = 3000 × $100 = $300K."
+        },
+        {
+            "question": "The following pie chart shows the distribution of students in different faculties:\n\n- Science: 40%\n- Arts: 30%\n- Commerce: 20%\n- Others: 10%\n\nIf the total number of students is 1200, what is the ratio of students in Science and Commerce?",
+            "options": ["2:1", "3:1", "4:1", "5:1"],
+            "answer": "4:1",
+            "explanation": "Students in Science = 40% of 1200 = 480. Students in Commerce = 20% of 1200 = 240. Ratio = 480:240 = 4:1."
+        },
+        {
+            "question": "The following bar graph shows the annual revenue (in $000) of a company over five years:\n\n| Year | 2017 | 2018 | 2019 | 2020 | 2021 |\n|------|------|------|------|------|------|\n| Rev. | 1000 | 1100 | 1200 | 1400 | 1600 |\n\nWhat is the compound annual growth rate (CAGR) over the five years?",
+            "options": ["10.5%", "11.8%", "12.5%", "13.2%"],
+            "answer": "11.8%",
+            "explanation": "CAGR = [(Final value / Initial value)^(1/n) - 1] × 100 = [(1600 / 1000)^(1/5) - 1] × 100 = 11.8%."
+        },
+        {
+            "question": "The following line graph shows the temperature (in °C) of a city over six months:\n\n| Month | Jan | Feb | Mar | Apr | May | Jun |\n|-------|-----|-----|-----|-----|-----|-----|\n| Temp  | 15  | 18  | 22  | 25  | 30  | 35  |\n\nWhat is the percentage increase in temperature from January to June?",
+            "options": ["100%", "110%", "120%", "130%"],
+            "answer": "133%",
+            "explanation": "Percentage increase = [(35 - 15) / 15] × 100 = 133%."
+        },
+        {
+            "question": "The following table shows the sales data (in units) of four products over three years:\n\n| Year | Product X | Product Y | Product Z | Product W |\n|------|-----------|-----------|-----------|-----------|\n| 2019 | 500       | 600       | 700       | 800       |\n| 2020 | 550       | 650       | 750       | 850       |\n| 2021 | 600       | 700       | 800       | 900       |\n\nWhat is the percentage growth in sales of Product Z from 2019 to 2021?",
+            "options": ["10%", "12%", "14%", "16%"],
+            "answer": "14%",
+            "explanation": "Growth = [(800 - 700) / 700] × 100 = 14%."
+        },
+        {
+            "question": "The following pie chart shows the expenditure distribution of a company:\n\n- Salaries: 50%\n- Rent: 20%\n- Marketing: 15%\n- R&D: 10%\n- Miscellaneous: 5%\n\nIf the total expenditure is $10 million, what is the amount spent on Marketing and R&D combined?",
+            "options": ["$2.5M", "$2.8M", "$3.0M", "$3.5M"],
+            "answer": "$2.5M",
+            "explanation": "Marketing + R&D = (15% + 10%) of $10M = 25% of $10M = $2.5M."
+        }
+    ]

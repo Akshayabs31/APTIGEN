@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Main Category</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #750ee3, #2575fc);
+    animation: bgShift 10s ease infinite alternate;
+    overflow-x: hidden;
+  }
+
+  @keyframes bgShift {
+    0% { background: linear-gradient(to right, #750ee3, #2575fc); }
+    100% { background: linear-gradient(to left, #2575fc, #750ee3); }
+  }
+
+  /* Navbar */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .navbar h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+  }
+
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .nav-links a:hover {
+    color: #ffde59;
+  }
+
+  /* Hamburger Icon */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+
+  /* Sidebar Menu */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(28, 0, 56, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .sidebar a:hover {
+    color: #ffde59;
+  }
+
+  .sidebar.show {
+    left: 0;
+  }
+
+  /* Main Category */
+  .maincat {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+  }
+
+  .cat {
+    background: linear-gradient(to right, #c8169e, #8508de);
+    padding: 60px 50px;
+    border-radius: 25px;
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.3);
+    text-align: center;
+    width: 400px;
+    max-width: 90%;
+    backdrop-filter: blur(10px);
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); }
+    50% { box-shadow: 0 0 30px rgba(255, 255, 255, 0.4); }
+    100% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); }
+  }
+
+  .head {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 40px;
+    animation: textFade 4s ease-in-out infinite;
+  }
+
+  @keyframes textFade {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.85; transform: scale(1.05); }
+  }
+
+  .cat a button {
+    width: 100%;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .cat a button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+
+  #aps {
+    background: #4CAF50;
+    color: white;
+  }
+
+  #gen {
+    background: #03A9F4;
+    color: white;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    .cat {
+      padding: 40px 30px;
+      width: 90%;
+    }
+
+    .head {
+      font-size: 26px;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+    <a href="maincat.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="auth/index.html">Logout</a>
+  </div>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Quiz App</h1>
+    <div class="nav-links">
+      <a href="maincat.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="auth/index.html">Logout</a>
+    </div>
+    <div class="hamburger" onclick="toggleSidebar()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Main Category -->
+  <div class="maincat">
+    <div class="cat">
+      <h2 class="head">Main Category</h2>
+      <a href="apsquiz/index.html"><button id="aps">Quantitative Aptitude</button></a>
+      <a href="generalquiz/html/index.html"><button id="gen">General Knowledge</button></a>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('show');
+    }
+
+    // Hide sidebar on window resize if screen is wide
+    window.addEventListener('resize', () => {
+      const sidebar = document.getElementById('sidebar');
+      if (window.innerWidth >= 768) {
+        sidebar.classList.remove('show');
+      }
+    });
+  </script>
+
+</body>
+</html>

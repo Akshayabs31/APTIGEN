@@ -1,0 +1,153 @@
+[
+    {
+        "question": "Simplify: (25 × 4) ÷ 5",
+        "options": ["5", "10", "20", "25"],
+        "answer": "20",
+        "explanation": "Simplify the expression: (25 × 4) ÷ 5 = 100 ÷ 5 = 20."
+    },
+    {
+        "question": "Simplify: 15 + 25 × 2",
+        "options": ["50", "55", "65", "70"],
+        "answer": "65",
+        "explanation": "Follow the BODMAS rule: 25 × 2 = 50, then 15 + 50 = 65."
+    },
+    {
+        "question": "What is the value of 50 ÷ 2 + 3 × 4?",
+        "options": ["26", "29", "32", "36"],
+        "answer": "29",
+        "explanation": "Follow BODMAS: 50 ÷ 2 = 25, 3 × 4 = 12, then 25 + 12 = 29."
+    },
+    {
+        "question": "Simplify: (12 × 3) ÷ 4 + 5",
+        "options": ["8", "9", "10", "11"],
+        "answer": "14",
+        "explanation": "Simplify the expression: (12 × 3) ÷ 4 + 5 = 36 ÷ 4 + 5 = 9 + 5 = 14."
+    },
+    {
+        "question": "Simplify: 2 + 3 × (5 − 2)",
+        "options": ["7", "11", "13", "15"],
+        "answer": "11",
+        "explanation": "Follow BODMAS: 5 − 2 = 3, then 3 × 3 = 9, then 2 + 9 = 11."
+    },
+    {
+        "question": "Evaluate: 120 ÷ (12 + 8)",
+        "options": ["5", "6", "10", "12"],
+        "answer": "6",
+        "explanation": "Simplify the denominator first: 12 + 8 = 20. Then 120 ÷ 20 = 6."
+    },
+    {
+        "question": "Simplify: 40 ÷ 2 × 3 − 5",
+        "options": ["25", "50", "55", "60"],
+        "answer": "55",
+        "explanation": "Follow BODMAS: 40 ÷ 2 = 20, then 20 × 3 = 60, and 60 − 5 = 55."
+    },
+    {
+        "question": "Find the value of: (5 × 3) + (8 ÷ 4)",
+        "options": ["17", "19", "20", "21"],
+        "answer": "17",
+        "explanation": "Simplify: (5 × 3) = 15, (8 ÷ 4) = 2, then 15 + 2 = 17."
+    },
+    {
+        "question": "Simplify: (15 ÷ 3) + (12 − 4)",
+        "options": ["5", "7", "11", "13"],
+        "answer": "11",
+        "explanation": "Simplify: (15 ÷ 3) = 5, (12 − 4) = 8, then 5 + 8 = 11."
+    },
+    {
+        "question": "Simplify: 10 × 2 ÷ (4 + 1)",
+        "options": ["2", "4", "6", "10"],
+        "answer": "4",
+        "explanation": "Simplify: (4 + 1) = 5, then 10 × 2 ÷ 5 = 20 ÷ 5 = 4."
+    },
+    {
+        "question": "Simplify: (16 ÷ 4) × (6 − 2)",
+        "options": ["8", "12", "16", "24"],
+        "answer": "16",
+        "explanation": "Simplify: (16 ÷ 4) = 4, (6 − 2) = 4, then 4 × 4 = 16."
+    },
+    {
+        "question": "Simplify: (9 + 3) × (8 ÷ 4)",
+        "options": ["24", "36", "48", "60"],
+        "answer": "24",
+        "explanation": "Simplify: (9 + 3) = 12, (8 ÷ 4) = 2, then 12 × 2 = 24."
+    },
+    {
+        "question": "Find the value of: 18 ÷ 3 × 2",
+        "options": ["6", "9", "12", "18"],
+        "answer": "12",
+        "explanation": "Follow BODMAS: 18 ÷ 3 = 6, then 6 × 2 = 12."
+    },
+    {
+        "question": "Simplify: (14 + 6) ÷ 2 − 4",
+        "options": ["5", "8", "10", "12"],
+        "answer": "8",
+        "explanation": "Simplify: (14 + 6) = 20, then 20 ÷ 2 = 10, and 10 − 4 = 8."
+    },
+    {
+        "question": "Simplify: 100 ÷ (5 × 2)",
+        "options": ["10", "15", "20", "25"],
+        "answer": "10",
+        "explanation": "Simplify the denominator first: (5 × 2) = 10. Then 100 ÷ 10 = 10."
+    },
+    {
+        "question": "Simplify: (8 × 4) ÷ (2 × 2)",
+        "options": ["4", "8", "12", "16"],
+        "answer": "8",
+        "explanation": "Simplify both parts: (8 × 4) = 32, (2 × 2) = 4, then 32 ÷ 4 = 8."
+    },
+    {
+        "question": "Simplify: 20 − 4 × 5 ÷ 2",
+        "options": ["0", "10", "20", "30"],
+        "answer": "10",
+        "explanation": "Follow BODMAS: 4 × 5 = 20, 20 ÷ 2 = 10, then 20 − 10 = 10."
+    },
+    {
+        "question": "Simplify: (6 × 3) ÷ 2 + 4",
+        "options": ["5", "9", "10", "13"],
+        "answer": "13",
+        "explanation": "Simplify: (6 × 3) = 18, 18 ÷ 2 = 9, then 9 + 4 = 13."
+    },
+    {
+        "question": "Simplify: (10 ÷ 2) × (5 − 3)",
+        "options": ["5", "10", "15", "20"],
+        "answer": "10",
+        "explanation": "Simplify: (10 ÷ 2) = 5, (5 − 3) = 2, then 5 × 2 = 10."
+    },
+    {
+        "question": "Simplify: 50 ÷ (10 − 8) × 2",
+        "options": ["20", "25", "50", "100"],
+        "answer": "50",
+        "explanation": "Simplify: (10 − 8) = 2, then 50 ÷ 2 = 25, and 25 × 2 = 50."
+    },
+    
+        {
+            "question": "Simplify: [(25 × 4) ÷ 5] + [(12 ÷ 3) × 2]",
+            "options": ["20", "22", "26", "30"],
+            "answer": "26",
+            "explanation": "Simplify each part: (25 × 4) ÷ 5 = 20, (12 ÷ 3) × 2 = 6. Add the results: 20 + 6 = 26."
+        },
+        {
+            "question": "Simplify: [(50 ÷ 5) + (6 × 3)] ÷ 2",
+            "options": ["12", "13", "14", "15"],
+            "answer": "14",
+            "explanation": "Simplify each part: (50 ÷ 5) = 10, (6 × 3) = 18. Add: 10 + 18 = 28. Divide: 28 ÷ 2 = 14."
+        },
+        {
+            "question": "Simplify: [(12 × 5) − (40 ÷ 8)] ÷ 4",
+            "options": ["10", "12", "14", "15"],
+            "answer": "14",
+            "explanation": "Simplify: (12 × 5) = 60, (40 ÷ 8) = 5. Subtract: 60 − 5 = 55. Divide: 55 ÷ 4 = 14."
+        },
+        {
+            "question": "Solve: [(15 × 3) ÷ 5] + [(36 ÷ 6) × 4]",
+            "options": ["20", "24", "30", "32"],
+            "answer": "32",
+            "explanation": "Simplify: (15 × 3) ÷ 5 = 9, (36 ÷ 6) × 4 = 24. Add: 9 + 24 = 32."
+        },
+        {
+            "question": "Simplify: [(48 ÷ 6) × (15 − 3)] ÷ 4",
+            "options": ["20", "24", "36", "40"],
+            "answer": "24",
+            "explanation": "Simplify each part: (48 ÷ 6) = 8, (15 − 3) = 12. Multiply: 8 × 12 = 96. Divide: 96 ÷ 4 = 24."
+        }
+    ]

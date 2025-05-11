@@ -1,0 +1,135 @@
+[
+    {
+        "question": "A boat can travel 120 km downstream in 4 hours and takes 6 hours to travel the same distance upstream. What is the speed of the boat in still water and the speed of the stream?",
+        "options": ["20 km/h and 10 km/h", "22 km/h and 8 km/h", "25 km/h and 5 km/h", "30 km/h and 15 km/h"],
+        "answer": "25 km/h and 5 km/h",
+        "explanation": "Downstream speed = 120 / 4 = 30 km/h. Upstream speed = 120 / 6 = 20 km/h. Speed of boat in still water = (30 + 20) / 2 = 25 km/h. Speed of stream = (30 - 20) / 2 = 5 km/h."
+    },
+    {
+        "question": "A boat rows 90 km downstream in 3 hours and 90 km upstream in 6 hours. If the boat doubles its speed in still water, how much time will it take to row 90 km upstream?",
+        "options": ["3 hours", "4 hours", "2.5 hours", "2 hours"],
+        "answer": "3 hours",
+        "explanation": "Downstream speed = 90 / 3 = 30 km/h. Upstream speed = 90 / 6 = 15 km/h. Speed of boat in still water = (30 + 15) / 2 = 22.5 km/h. If doubled: 22.5 × 2 = 45 km/h. New upstream speed = 45 - 7.5 = 37.5 km/h. Time = 90 / 37.5 = 3 hours."
+    },
+    {
+        "question": "A boat takes 4 hours to row 48 km downstream and 6 hours for the same distance upstream. How far can the boat travel downstream in 7 hours if the speed of the stream is 3 km/h?",
+        "options": ["84 km", "96 km", "102 km", "108 km"],
+        "answer": "96 km",
+        "explanation": "Downstream speed = 48 / 4 = 12 km/h. Speed of boat in still water = 12 - 3 = 9 km/h. New downstream speed = 9 + 3 = 12 km/h. Distance = 7 × 12 = 96 km."
+    },
+    {
+        "question": "A boat travels 120 km downstream in 5 hours and returns upstream in 8 hours. If the speed of the stream is 4 km/h, what is the speed of the boat in still water?",
+        "options": ["12 km/h", "14 km/h", "16 km/h", "18 km/h"],
+        "answer": "16 km/h",
+        "explanation": "Downstream speed = 120 / 5 = 24 km/h. Upstream speed = 120 / 8 = 15 km/h. Speed of boat in still water = (24 + 15) / 2 = 16 km/h."
+    },
+    {
+        "question": "A boat rows 80 km downstream in 4 hours and 80 km upstream in 8 hours. If the boat reduces its speed in still water by 25%, how long will it take to row 80 km upstream?",
+        "options": ["10 hours", "11 hours", "12 hours", "13 hours"],
+        "answer": "12 hours",
+        "explanation": "Downstream speed = 80 / 4 = 20 km/h. Upstream speed = 80 / 8 = 10 km/h. Speed of boat in still water = (20 + 10) / 2 = 15 km/h. If reduced by 25%: 15 × 0.75 = 11.25 km/h. New upstream speed = 11.25 - 5 = 6.25 km/h. Time = 80 / 6.25 = 12 hours."
+    },
+    {
+        "question": "A boat takes 3 hours to row 36 km downstream and 6 hours to row the same distance upstream. How much time will it take to row 72 km downstream?",
+        "options": ["6 hours", "7 hours", "8 hours", "9 hours"],
+        "answer": "6 hours",
+        "explanation": "Downstream speed = 36 / 3 = 12 km/h. Time = 72 / 12 = 6 hours."
+    },
+    {
+        "question": "A boat covers 150 km downstream in 5 hours and 150 km upstream in 10 hours. If it travels for 10 hours downstream and then 5 hours upstream, what is the total distance covered?",
+        "options": ["300 km", "350 km", "400 km", "450 km"],
+        "answer": "400 km",
+        "explanation": "Downstream speed = 150 / 5 = 30 km/h. Upstream speed = 150 / 10 = 15 km/h. Total distance = (30 × 10) + (15 × 5) = 300 + 100 = 400 km."
+    },
+    {
+        "question": "A boat rows 120 km downstream in 6 hours and 120 km upstream in 8 hours. If the speed of the stream increases by 50%, how long will it take to row 120 km upstream?",
+        "options": ["6 hours", "7 hours", "8 hours", "9 hours"],
+        "answer": "7 hours",
+        "explanation": "Downstream speed = 120 / 6 = 20 km/h. Upstream speed = 120 / 8 = 15 km/h. Speed of stream = (20 - 15) / 2 = 2.5 km/h. If increased by 50%: 2.5 × 1.5 = 3.75 km/h. New upstream speed = 17.5 - 3.75 = 13.75 km/h. Time = 120 / 13.75 = 7 hours."
+    },
+    {
+        "question": "A boat travels 60 km downstream in 2 hours and returns upstream in 3 hours. If the speed of the boat in still water is increased by 20%, how long will it take to row 60 km upstream?",
+        "options": ["2 hours", "2.5 hours", "3 hours", "3.5 hours"],
+        "answer": "2.5 hours",
+        "explanation": "Downstream speed = 60 / 2 = 30 km/h. Upstream speed = 60 / 3 = 20 km/h. Speed of boat in still water = (30 + 20) / 2 = 25 km/h. If increased by 20%: 25 × 1.2 = 30 km/h. New upstream speed = 30 - 5 = 25 km/h. Time = 60 / 25 = 2.5 hours."
+    },
+    {
+        "question": "A boat rows 50 km downstream in 2 hours and 50 km upstream in 5 hours. If the speed of the stream increases by 2 km/h, how long will it take to row 50 km upstream?",
+        "options": ["3 hours", "3.5 hours", "4 hours", "4.5 hours"],
+        "answer": "3.5 hours",
+        "explanation": "Downstream speed = 50 / 2 = 25 km/h. Upstream speed = 50 / 5 = 10 km/h. Speed of boat in still water = (25 + 10) / 2 = 17.5 km/h. Speed of stream = (25 - 10) / 2 = 7.5 km/h. If increased by 2 km/h: 7.5 + 2 = 9.5 km/h. New upstream speed = 17.5 - 9.5 = 8 km/h. Time = 50 / 8 = 3.5 hours."
+    },
+    {
+        "question": "A boat travels 80 km downstream in 4 hours and returns upstream in 8 hours. If the speed of the stream doubles, how much time will it take to row 80 km upstream?",
+        "options": ["6 hours", "6.5 hours", "7 hours", "7.5 hours"],
+        "answer": "7 hours",
+        "explanation": "Downstream speed = 80 / 4 = 20 km/h. Upstream speed = 80 / 8 = 10 km/h. Speed of stream = (20 - 10) / 2 = 5 km/h. If doubled: 5 × 2 = 10 km/h. New upstream speed = 20 - 10 = 10 km/h. Time = 80 / 10 = 7 hours."
+    },
+    
+        {
+            "question": "A boat takes 2 hours to travel 24 km downstream. If the speed of the stream is 2 km/h, what is the speed of the boat in still water?",
+            "options": ["10 km/h", "11 km/h", "12 km/h", "13 km/h"],
+            "answer": "12 km/h",
+            "explanation": "Speed downstream = 24 / 2 = 12 km/h. Speed of boat in still water = Speed downstream - Speed of stream = 12 - 2 = 12 km/h."
+        },
+        {
+            "question": "A boat can travel 30 km downstream in 3 hours and the same distance upstream in 5 hours. What is the speed of the stream?",
+            "options": ["1 km/h", "2 km/h", "3 km/h", "4 km/h"],
+            "answer": "2 km/h",
+            "explanation": "Downstream speed = 30 / 3 = 10 km/h. Upstream speed = 30 / 5 = 6 km/h. Speed of stream = (Downstream speed - Upstream speed) / 2 = (10 - 6) / 2 = 2 km/h."
+        },
+        {
+            "question": "A boat rows 20 km downstream in 2 hours and 20 km upstream in 4 hours. What is the speed of the boat in still water?",
+            "options": ["6 km/h", "7 km/h", "8 km/h", "9 km/h"],
+            "answer": "7 km/h",
+            "explanation": "Downstream speed = 20 / 2 = 10 km/h. Upstream speed = 20 / 4 = 5 km/h. Speed of boat in still water = (Downstream speed + Upstream speed) / 2 = (10 + 5) / 2 = 7 km/h."
+        },
+        {
+            "question": "A boat takes 1.5 hours to travel 18 km downstream. If the speed of the stream is 3 km/h, what is the speed of the boat in still water?",
+            "options": ["9 km/h", "10 km/h", "11 km/h", "12 km/h"],
+            "answer": "9 km/h",
+            "explanation": "Speed downstream = 18 / 1.5 = 12 km/h. Speed of boat in still water = Speed downstream - Speed of stream = 12 - 3 = 9 km/h."
+        },
+        {
+            "question": "A man rows a boat at 12 km/h in still water. If the stream flows at 4 km/h, how long will it take him to row 36 km downstream?",
+            "options": ["1.5 hours", "2 hours", "2.5 hours", "3 hours"],
+            "answer": "2 hours",
+            "explanation": "Speed downstream = 12 + 4 = 16 km/h. Time = Distance / Speed = 36 / 16 = 2 hours."
+        },
+        {
+            "question": "A boat travels 45 km downstream in 3 hours. If the speed of the stream is 5 km/h, what is the speed of the boat in still water?",
+            "options": ["10 km/h", "12 km/h", "15 km/h", "20 km/h"],
+            "answer": "15 km/h",
+            "explanation": "Speed downstream = 45 / 3 = 15 km/h. Speed of boat in still water = Speed downstream - Speed of stream = 15 - 5 = 15 km/h."
+        },
+        {
+            "question": "A boat can row 40 km downstream in 4 hours and 40 km upstream in 8 hours. What is the speed of the boat in still water?",
+            "options": ["8 km/h", "9 km/h", "10 km/h", "11 km/h"],
+            "answer": "10 km/h",
+            "explanation": "Downstream speed = 40 / 4 = 10 km/h. Upstream speed = 40 / 8 = 5 km/h. Speed of boat in still water = (Downstream speed + Upstream speed) / 2 = (10 + 5) / 2 = 10 km/h."
+        },
+        {
+            "question": "A boat takes 2 hours to travel 16 km downstream. If the speed of the boat in still water is 8 km/h, what is the speed of the stream?",
+            "options": ["2 km/h", "3 km/h", "4 km/h", "5 km/h"],
+            "answer": "2 km/h",
+            "explanation": "Speed downstream = 16 / 2 = 8 km/h. Speed of stream = Speed downstream - Speed of boat in still water = 8 - 6 = 2 km/h."
+        },
+        {
+            "question": "A boat takes 4 hours to cover 48 km downstream. If the speed of the stream is 4 km/h, what is the speed of the boat in still water?",
+            "options": ["8 km/h", "9 km/h", "10 km/h", "11 km/h"],
+            "answer": "8 km/h",
+            "explanation": "Speed downstream = 48 / 4 = 12 km/h. Speed of boat in still water = Speed downstream - Speed of stream = 12 - 4 = 8 km/h."
+        },
+        {
+            "question": "A boat rows 20 km downstream in 2 hours and 20 km upstream in 4 hours. What is the speed of the stream?",
+            "options": ["1 km/h", "2 km/h", "3 km/h", "4 km/h"],
+            "answer": "2 km/h",
+            "explanation": "Downstream speed = 20 / 2 = 10 km/h. Upstream speed = 20 / 4 = 5 km/h. Speed of stream = (Downstream speed - Upstream speed) / 2 = (10 - 5) / 2 = 2 km/h."
+        },
+        {
+            "question": "A boat takes 6 hours to row 48 km upstream. If the speed of the stream is 2 km/h, what is the speed of the boat in still water?",
+            "options": ["8 km/h", "9 km/h", "10 km/h", "11 km/h"],
+            "answer": "10 km/h",
+            "explanation": "Speed upstream = 48 / 6 = 8 km/h. Speed of boat in still water = Speed upstream + Speed of stream = 8 + 2 = 10 km/h."
+        }
+    ]

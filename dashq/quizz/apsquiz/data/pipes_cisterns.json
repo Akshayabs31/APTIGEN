@@ -1,0 +1,177 @@
+[
+    {
+        "question": "Pipe A can fill a tank in 12 hours, and Pipe B can fill it in 18 hours. If both pipes are opened together, in how many hours will the tank be filled?",
+        "options": ["6 hours", "7.2 hours", "7.5 hours", "8 hours"],
+        "answer": "7.2 hours",
+        "explanation": "Rate of A = 1/12, Rate of B = 1/18. Combined rate = 1/12 + 1/18 = 5/36. Time = 1 ÷ (5/36) = 7.2 hours."
+    },
+    {
+        "question": "Pipe A can fill a tank in 8 hours, and Pipe B can fill it in 6 hours. If both pipes are opened together, how much of the tank will be filled in 2 hours?",
+        "options": ["1/2", "2/3", "5/12", "3/4"],
+        "answer": "5/12",
+        "explanation": "Rate of A = 1/8, Rate of B = 1/6. Combined rate = 1/8 + 1/6 = 7/24. Work done in 2 hours = 2 × (7/24) = 5/12."
+    },
+    {
+        "question": "A pipe can fill a tank in 10 hours, but a leak at the bottom can empty it in 15 hours. If the pipe and the leak are working together, in how many hours will the tank be filled?",
+        "options": ["20 hours", "25 hours", "30 hours", "35 hours"],
+        "answer": "30 hours",
+        "explanation": "Rate of filling = 1/10, Rate of emptying = 1/15. Net rate = 1/10 - 1/15 = 1/30. Time = 1 ÷ (1/30) = 30 hours."
+    },
+    {
+        "question": "Two pipes A and B can fill a tank in 12 hours and 16 hours respectively. If both pipes are opened together, but A is closed after 4 hours, how long will it take for B to fill the remaining tank?",
+        "options": ["4 hours", "5 hours", "6 hours", "7 hours"],
+        "answer": "5 hours",
+        "explanation": "Work done by A and B in 4 hours = (1/12 + 1/16) × 4 = 1/3. Remaining work = 1 - 1/3 = 2/3. Work rate of B = 1/16. Time = (2/3) ÷ (1/16) = 5 hours."
+    },
+    {
+        "question": "Pipe A can fill a tank in 5 hours, while Pipe B can fill it in 10 hours. Pipe C can empty the tank in 20 hours. If all three pipes are opened together, in how many hours will the tank be filled?",
+        "options": ["4 hours", "5 hours", "6 hours", "7 hours"],
+        "answer": "5 hours",
+        "explanation": "Rate of A = 1/5, Rate of B = 1/10, Rate of C = -1/20. Net rate = 1/5 + 1/10 - 1/20 = 1/5. Time = 1 ÷ (1/5) = 5 hours."
+    },
+    {
+        "question": "A cistern has two inlet pipes A and B, which can fill it in 10 hours and 12 hours respectively, and an outlet pipe C, which can empty it in 15 hours. If all three pipes are opened together, how long will it take to fill the cistern?",
+        "options": ["8 hours", "10 hours", "12 hours", "15 hours"],
+        "answer": "10 hours",
+        "explanation": "Rate of A = 1/10, Rate of B = 1/12, Rate of C = -1/15. Net rate = 1/10 + 1/12 - 1/15 = 1/10. Time = 1 ÷ (1/10) = 10 hours."
+    },
+    {
+        "question": "Pipe A can fill a tank in 6 hours, and Pipe B can fill it in 9 hours. If both pipes are opened together, how much of the tank will be filled in 1 hour?",
+        "options": ["1/2", "1/3", "2/5", "5/18"],
+        "answer": "5/18",
+        "explanation": "Rate of A = 1/6, Rate of B = 1/9. Combined rate = 1/6 + 1/9 = 5/18. Work done in 1 hour = 5/18."
+    },
+    {
+        "question": "A pipe can fill a cistern in 3 hours. Due to a leakage at the bottom, it takes 4 hours to fill the cistern. How long will it take for the leakage to empty the cistern if the pipe is not working?",
+        "options": ["8 hours", "10 hours", "12 hours", "15 hours"],
+        "answer": "12 hours",
+        "explanation": "Rate of filling = 1/3, Net rate = 1/4. Leakage rate = 1/3 - 1/4 = 1/12. Time = 1 ÷ (1/12) = 12 hours."
+    },
+    {
+        "question": "Pipe A can fill a tank in 4 hours, and Pipe B can fill the same tank in 6 hours. If both pipes are opened simultaneously, in how many hours will they fill half the tank?",
+        "options": ["1 hour", "1.2 hours", "1.5 hours", "2 hours"],
+        "answer": "1.2 hours",
+        "explanation": "Rate of A = 1/4, Rate of B = 1/6. Combined rate = 1/4 + 1/6 = 5/12. Time to fill half the tank = (1/2) ÷ (5/12) = 1.2 hours."
+    },
+    {
+        "question": "Pipe A can fill a tank in 18 hours, and Pipe B can fill it in 24 hours. If both pipes are opened together, how much of the tank will be filled in 6 hours?",
+        "options": ["1/3", "2/5", "5/12", "7/18"],
+        "answer": "5/12",
+        "explanation": "Rate of A = 1/18, Rate of B = 1/24. Combined rate = 1/18 + 1/24 = 7/72. Work done in 6 hours = 6 × (7/72) = 5/12."
+    },
+    {
+        "question": "A pipe can fill a tank in 5 hours, and another pipe can fill it in 10 hours. If both pipes are opened together, how long will it take to fill 3/4 of the tank?",
+        "options": ["2 hours", "2.5 hours", "3 hours", "3.5 hours"],
+        "answer": "2.5 hours",
+        "explanation": "Rate of first pipe = 1/5, Rate of second pipe = 1/10. Combined rate = 1/5 + 1/10 = 3/10. Time = (3/4) ÷ (3/10) = 2.5 hours."
+    },
+    {
+        "question": "Two pipes A and B can fill a tank in 15 hours and 20 hours respectively. If both pipes are opened together, in how many hours will 60% of the tank be filled?",
+        "options": ["6 hours", "7 hours", "8 hours", "9 hours"],
+        "answer": "7 hours",
+        "explanation": "Rate of A = 1/15, Rate of B = 1/20. Combined rate = 1/15 + 1/20 = 7/60. Time = (60/100) ÷ (7/60) = 7 hours."
+    },
+    {
+        "question": "Pipe A can fill a tank in 6 hours, and Pipe B can fill it in 8 hours. If both pipes are opened together, how much time will they take to fill 3/4 of the tank?",
+        "options": ["3 hours", "3.2 hours", "3.5 hours", "4 hours"],
+        "answer": "3.2 hours",
+        "explanation": "Rate of A = 1/6, Rate of B = 1/8. Combined rate = 1/6 + 1/8 = 7/24. Time = (3/4) ÷ (7/24) = 3.2 hours."
+    },
+    {
+        "question": "Pipe A can fill a tank in 4 hours, and Pipe B can empty it in 8 hours. If both pipes are opened together, in how many hours will the tank be filled?",
+        "options": ["6 hours", "8 hours", "10 hours", "12 hours"],
+        "answer": "8 hours",
+        "explanation": "Rate of A = 1/4, Rate of B = -1/8. Net rate = 1/4 - 1/8 = 1/8. Time = 1 ÷ (1/8) = 8 hours."
+    },
+
+        {
+            "question": "Pipe A can fill a tank in 12 hours, and Pipe B can fill it in 16 hours. Pipe C can empty the tank in 24 hours. If all three pipes are opened together, how long will it take to fill the tank?",
+            "options": ["8 hours", "10 hours", "12 hours", "14 hours"],
+            "answer": "10 hours",
+            "explanation": "Net rate = 1/12 + 1/16 - 1/24 = 1/10. Time = 1 ÷ (1/10) = 10 hours."
+        },
+        {
+            "question": "Two pipes A and B can fill a tank in 15 hours and 20 hours respectively. An outlet pipe C can empty the tank in 30 hours. If all three pipes are opened together, how long will it take to fill the tank?",
+            "options": ["8 hours", "10 hours", "12 hours", "14 hours"],
+            "answer": "12 hours",
+            "explanation": "Net rate = 1/15 + 1/20 - 1/30 = 1/12. Time = 1 ÷ (1/12) = 12 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 5 hours, and Pipe B can fill it in 10 hours. Pipe C can empty it in 15 hours. If all three pipes are opened together, how long will it take to fill the tank?",
+            "options": ["6 hours", "7 hours", "8 hours", "9 hours"],
+            "answer": "6 hours",
+            "explanation": "Net rate = 1/5 + 1/10 - 1/15 = 1/6. Time = 1 ÷ (1/6) = 6 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 12 hours, and Pipe B can fill it in 8 hours. If both pipes are opened together for 3 hours, and then Pipe A is closed, how much longer will Pipe B take to fill the tank?",
+            "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+            "answer": "3 hours",
+            "explanation": "Work done in 3 hours = (1/12 + 1/8) × 3 = 5/12. Remaining work = 1 - 5/12 = 7/12. Time for B alone = (7/12) ÷ (1/8) = 3 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 10 hours, and Pipe B can fill it in 15 hours. Pipe C can empty the tank in 20 hours. If all three pipes are opened together, how long will it take to fill the tank?",
+            "options": ["8 hours", "9 hours", "10 hours", "12 hours"],
+            "answer": "9 hours",
+            "explanation": "Net rate = 1/10 + 1/15 - 1/20 = 1/9. Time = 1 ÷ (1/9) = 9 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 6 hours, while Pipe B can fill it in 9 hours. Pipe C can empty it in 12 hours. If all three pipes are opened together, how long will it take to fill the tank?",
+            "options": ["4.5 hours", "5 hours", "6 hours", "7 hours"],
+            "answer": "4.5 hours",
+            "explanation": "Net rate = 1/6 + 1/9 - 1/12 = 2/9. Time = 1 ÷ (2/9) = 4.5 hours."
+        },
+        {
+            "question": "Pipe A fills a tank in 10 hours, and Pipe B empties it in 15 hours. If both pipes are opened together, how long will it take to fill the tank?",
+            "options": ["20 hours", "25 hours", "30 hours", "35 hours"],
+            "answer": "30 hours",
+            "explanation": "Net rate = 1/10 - 1/15 = 1/30. Time = 1 ÷ (1/30) = 30 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 4 hours, Pipe B can fill it in 6 hours, and Pipe C can empty it in 8 hours. If all three pipes are opened together, how long will it take to fill the tank?",
+            "options": ["3 hours", "4 hours", "5 hours", "6 hours"],
+            "answer": "4 hours",
+            "explanation": "Net rate = 1/4 + 1/6 - 1/8 = 1/4. Time = 1 ÷ (1/4) = 4 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 10 hours, and Pipe B can fill it in 12 hours. If both pipes are opened together, how long will it take to fill 3/4 of the tank?",
+            "options": ["3 hours", "4 hours", "5 hours", "6 hours"],
+            "answer": "5 hours",
+            "explanation": "Combined rate = 1/10 + 1/12 = 11/60. Time = (3/4) ÷ (11/60) = 5 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 8 hours, and Pipe B can fill it in 6 hours. If both pipes are opened for 3 hours, how much of the tank will be filled?",
+            "options": ["1/2", "2/3", "3/4", "5/6"],
+            "answer": "3/4",
+            "explanation": "Combined rate = 1/8 + 1/6 = 7/24. Work done in 3 hours = 3 × (7/24) = 7/8."
+        },
+        {
+            "question": "Pipe A can fill a cistern in 12 hours, and Pipe B can fill it in 16 hours. Pipe C can empty it in 24 hours. If all three are opened together, how long will it take to fill the cistern?",
+            "options": ["8 hours", "9 hours", "10 hours", "12 hours"],
+            "answer": "10 hours",
+            "explanation": "Net rate = 1/12 + 1/16 - 1/24 = 1/10. Time = 1 ÷ (1/10) = 10 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 15 hours, and Pipe B can fill it in 20 hours. Pipe C can empty the tank in 30 hours. If all three pipes are opened together, how long will it take to fill the tank?",
+            "options": ["10 hours", "12 hours", "15 hours", "18 hours"],
+            "answer": "12 hours",
+            "explanation": "Net rate = 1/15 + 1/20 - 1/30 = 1/12. Time = 1 ÷ (1/12) = 12 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 10 hours, and Pipe B can fill it in 12 hours. If both pipes are opened together, how long will it take to fill half the tank?",
+            "options": ["2.5 hours", "3 hours", "3.5 hours", "4 hours"],
+            "answer": "3 hours",
+            "explanation": "Combined rate = 1/10 + 1/12 = 11/60. Time = (1/2) ÷ (11/60) = 3 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 6 hours, and Pipe B can fill it in 8 hours. If both pipes are opened together, how long will it take to fill 3/8 of the tank?",
+            "options": ["1.5 hours", "2 hours", "2.5 hours", "3 hours"],
+            "answer": "2.25 hours",
+            "explanation": "Combined rate = 1/6 + 1/8 = 7/24. Time = (3/8) ÷ (7/24) = 2.25 hours."
+        },
+        {
+            "question": "Pipe A can fill a tank in 5 hours. Due to a leakage, it takes 7 hours to fill the tank. How long will it take for the leakage to empty the tank completely?",
+            "options": ["10 hours", "12 hours", "14 hours", "15 hours"],
+            "answer": "17.5 hours",
+            "explanation": "Rate of filling = 1/5, Net rate = 1/7. Leakage rate = 1/5 - 1/7 = 1/17.5. Time = 1 ÷ (1/17.5) = 17.5 hours."
+        }
+    ]

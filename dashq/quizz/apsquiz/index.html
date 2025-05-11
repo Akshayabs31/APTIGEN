@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quantitative Subtopics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f5f9;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      background: #1f2937;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #d1d5db;
+    }
+
+    .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      gap: 5px;
+    }
+
+    .menu-icon div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: -200px;
+      height: 100%;
+      width: 160px;
+      background: #1f2937;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      transition: left 0.3s ease;
+      z-index: 9999;
+    }
+
+    .mobile-menu.show {
+      left: 0;
+    }
+
+    .mobile-menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .mobile-menu a:last-child {
+      border-bottom: none;
+    }
+
+    h1 {
+      color: #1f2937;
+      margin: 20px 0 10px;
+      text-align: center;
+    }
+
+    .search-container {
+      text-align: center;
+      margin: 10px 0 20px;
+    }
+
+    .search-container input {
+      padding: 10px 15px;
+      width: 80%;
+      max-width: 400px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .cube {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 30px 10px;
+      text-align: center;
+      font-weight: 600;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .cube:hover {
+      background: #3b82f6;
+      color: white;
+      transform: translateY(-5px) scale(1.03);
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .menu-icon {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-logo">Quant Subtopics</div>
+  <div class="nav-links">
+    <a href="../maincat.html">Home</a>
+    <a href="../dashboard.html">Dashboard</a>
+    <a href="../auth/index.html">Logout</a>
+    
+  </div>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="../maincat.html">Home</a>
+  <a href="../dashboard.html">Dashboard</a>
+  <a href="../auth/index.html">Logout</a>
+  
+</div>
+
+<main style="flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px;">
+  <h1>Choose a Topic from Quantitative Aptitude</h1>
+
+  <div class="search-container">
+    <input type="text" id="searchBox" placeholder="Search for a topic..." onkeyup="filterTopics()">
+  </div>
+
+  <div class="grid-container" id="topicsContainer">
+    <div class="cube" onclick="startQuiz('number_system')">Number System</div>
+    <div class="cube" onclick="startQuiz('hcf_lcm')">HCF & LCM</div>
+    <div class="cube" onclick="startQuiz('simplification')">Simplification</div>
+    <div class="cube" onclick="startQuiz('surds_indices')">Surds & Indices</div>
+    <div class="cube" onclick="startQuiz('ratio_proportion')">Ratio & Proportion</div>
+    <div class="cube" onclick="startQuiz('averages')">Averages</div>
+    <div class="cube" onclick="startQuiz('percentages')">Percentages</div>
+    <div class="cube" onclick="startQuiz('profit_loss')">Profit & Loss</div>
+    <div class="cube" onclick="startQuiz('simple_interest')">Simple Interest</div>
+    <div class="cube" onclick="startQuiz('compound_interest')">Compound Interest</div>
+    <div class="cube" onclick="startQuiz('time_work')">Time & Work</div>
+    <div class="cube" onclick="startQuiz('pipes_cisterns')">Pipes & Cisterns</div>
+    <div class="cube" onclick="startQuiz('time_speed_distance')">Time, Speed & Distance</div>
+    <div class="cube" onclick="startQuiz('boats_streams')">Boats & Streams</div>
+    <div class="cube" onclick="startQuiz('algebra')">Algebra</div>
+    <div class="cube" onclick="startQuiz('mensuration')">Mensuration</div>
+    <div class="cube" onclick="startQuiz('geometry')">Geometry</div>
+    <div class="cube" onclick="startQuiz('data_interpretation')">Data Interpretation</div>
+    <div class="cube" onclick="startQuiz('probability')">Probability</div>
+    <div class="cube" onclick="startQuiz('permutations_combinations')">Permutations & Combinations</div>
+    <div class="cube" onclick="startQuiz('statistics')">Statistics</div>
+  </div>
+</main>
+
+<script>
+  function startQuiz(category) {
+    localStorage.setItem('selectedCategory', category);
+    window.location.href = 'quiz.html';
+  }
+
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('show');
+  }
+
+  function filterTopics() {
+    const searchValue = document.getElementById('searchBox').value.toLowerCase();
+    const cubes = document.querySelectorAll('.cube');
+    cubes.forEach(cube => {
+      const text = cube.textContent.toLowerCase();
+      cube.style.display = text.includes(searchValue) ? 'block' : 'none';
+    });
+  }
+
+  window.addEventListener('resize', () => {
+    const menu = document.getElementById('mobileMenu');
+    if (window.innerWidth > 768 && menu.classList.contains('show')) {
+      menu.classList.remove('show');
+    }
+  });
+</script>
+
+</body>
+</html>

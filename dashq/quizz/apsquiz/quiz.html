@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body class="light">
+  <audio id="tadaSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_403684d27d.mp3?filename=success-fanfare-trumpets-6185.mp3"></audio>
+
+  <button id="darkModeToggle" class="dark-mode-btn">🌙</button>
+
+  <!-- Fixed header section -->
+  <div class="quiz-header">
+    <div id="timer">Time: 20:00</div>
+    <div class="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+  </div>
+
+  <!-- Right side panel for navigation -->
+  <div class="side-panel">
+    <h3>Questions</h3>
+    <div class="questions-navigation">
+      <!-- Dynamically populated question navigation buttons -->
+    </div>
+  </div>
+
+  <div class="quiz-screen">
+    <div class="question-wrapper">
+      <div class="number">Question <span class="current">1</span>/<span class="total">10</span></div>
+      <div class="question">Loading question...</div>
+    </div>
+    <div class="answer-wrapper"></div>
+    <div class="navigation-buttons">
+      <button class="btn prev" disabled>Previous</button>
+      <button class="btn next">Next</button>
+    </div>
+    <div class="submit-container">
+      <button class="btn submit hide">Submit</button>
+    </div>
+  </div>
+
+  <div class="end-screen hide">
+    <h1>Your Score</h1>
+    <div class="score">
+      <span class="final-score">0</span> / <span class="total-score">10</span>
+    </div>
+    <div id="highScoreDisplay" class="high-score">High Score: 0</div>
+    <div class="end-buttons">
+      <button class="btn review">Review Answers</button>
+      <button class="btn restart">Restart</button>
+    </div>
+  </div>
+
+  <div class="review-screen hide">
+    <h2>Review Answers</h2>
+    <div class="review-container"></div>
+    <button class="btn restart">Restart</button>
+  </div>
+
+  <script src="js/quiz.js"></script>
+<script>
+  const user = localStorage.getItem("currentUser");
+  const topic = localStorage.getItem("selectedTopic");
+
+  document.querySelector(".submit").addEventListener("click", () => {
+    setTimeout(() => {
+      const score = parseInt(document.querySelector(".final-score").textContent);
+      const date = new Date().toLocaleString();
+
+      if (user && topic && !isNaN(score)) {
+        const resultKey = `${user}_quizResults`;
+        const results = JSON.parse(localStorage.getItem(resultKey)) || [];
+        results.push({ topic, score, date });
+        localStorage.setItem(resultKey, JSON.stringify(results));
+        console.log("Saved quiz result to localStorage for user:", user);
+      }
+    }, 500); // wait for score to render
+  });
+</script>
+
+</body>
+</html>

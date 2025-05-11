@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Authentication</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        
+        <!-- Sign In Form -->
+        <form action="login.php" method="POST" class="sign-in-form">
+          <h2 class="title">Sign In</h2>
+
+          <div class="input-group">
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" placeholder="Email" required autocomplete="off"/>
+            </div>
+            
+          </div>
+
+          <div class="input-group">
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="password" placeholder="Password" required autocomplete="off" value=""/>
+            </div>
+            
+          </div>
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Sign Up Form -->
+        <form action="register.php" method="POST" class="sign-up-form">
+          <h2 class="title">Sign Up</h2>
+
+          <div class="input-group">
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" name="username" placeholder="Username" required autocomplete="off" value=""/>
+            </div>
+            
+          </div>
+
+          <div class="input-group">
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" placeholder="Email" required autocomplete="off" value=""/>
+            </div>
+            
+          </div>
+
+          <div class="input-group">
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="password" placeholder="Password" autocomplete="off" value="" />
+            </div>
+            
+          </div>
+
+          <button type="submit" class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Panels -->
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <div class="content">
+          <h3>New here?</h3>
+          <p>Register now and start your journey with us!</p>
+          <button class="btn transparent" id="sign-up-btn">Sign Up</button>
+        </div>
+        <img src="img/logg.png" style="width: 445px;" class="image" alt="Sign Up Image" />
+      </div>
+
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>Already have an account?</h3>
+          <p>Just sign in and continue exploring!</p>
+          <button class="btn transparent" id="sign-in-btn">Sign In</button>
+        </div>
+        <img src="img/reg.png" style="width: 450px;" class="image" alt="Sign In Image" />
+      </div>
+    </div>
+  </div>
+
+  
+
+
+  <script>
+// Toggle panels
+const sign_in_btn = document.querySelector("#sign-in-btn");
+const sign_up_btn = document.querySelector("#sign-up-btn");
+const container = document.querySelector(".container");
+
+sign_up_btn.addEventListener("click", () => {
+  container.classList.add("sign-up-mode");
+});
+
+sign_in_btn.addEventListener("click", () => {
+  container.classList.remove("sign-up-mode");
+});
+
+// Real-time validation
+document.addEventListener("DOMContentLoaded", () => {
+  const minPasswordLength = 6;
+
+  const inputs = document.querySelectorAll("input");
+
+  inputs.forEach(input => {
+    input.addEventListener("input", () => {
+      const value = input.value.trim();
+      const parent = input.closest(".input-group");
+      let existingError = parent.querySelector(".error-message");
+
+      let errorMessage = "";
+
+      if (input.name === "username") {
+        if (/\d/.test(value)) {
+          errorMessage = "Username should not contain digits";
+        }
+      }
+
+      if (input.name === "email") {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(value)) {
+          errorMessage = "Please enter a valid email address";
+        }
+      }
+
+      if (input.name === "password") {
+        if (value.length < minPasswordLength) {
+          errorMessage = `Password must be at least ${minPasswordLength} characters`;
+        }
+      }
+
+      // Show or remove error message dynamically
+      if (errorMessage) {
+        if (!existingError) {
+          existingError = document.createElement("div");
+          existingError.className = "error-message";
+          parent.appendChild(existingError);
+        }
+        existingError.textContent = errorMessage;
+        existingError.style.color = "red";
+      } else if (existingError) {
+        existingError.remove();
+      }
+    });
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("login_error") === "1") {
+    const loginForm = document.querySelector(".sign-in-form");
+    let errorDiv = loginForm.querySelector(".form-error");
+
+    if (!errorDiv) {
+      errorDiv = document.createElement("div");
+      errorDiv.className = "form-error";
+      errorDiv.style.color = "red";
+      errorDiv.style.marginTop = "10px";
+      errorDiv.textContent = "Access Denied: Invalid email or password";
+      loginForm.appendChild(errorDiv);
+    }
+  }
+});
+
+
+  </script>
+</body>
+  <script src="script.js"></script>
+
+</html>
