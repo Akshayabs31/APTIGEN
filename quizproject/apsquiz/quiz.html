@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quiz App</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="dark">
+<audio id="tadaSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_403684d27d.mp3?filename=success-fanfare-trumpets-6185.mp3"></audio>
+<audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2021/08/04/audio_306efc9a0b.mp3?filename=ui-click-97815.mp3"></audio>
+
+<!-- Header Section -->
+<div class="quiz-header">
+  <div class="header-content">
+    <div id="timer">
+      <i class="fas fa-clock"></i>
+      <span>20:00</span>
+    </div>
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <div class="progress-text">
+        Question <span class="current">1</span> of <span class="total">10</span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Main Quiz Area -->
+<div class="quiz-container">
+  <!-- Quiz Screen -->
+  <div class="quiz-screen">
+    <div class="question-header">
+      <span class="question-number">Q1</span>
+      <div class="question">Loading question...</div>
+    </div>
+    <div class="answer-wrapper"></div>
+    <div class="navigation-buttons">
+  <button class="btn submit hide">Submit Quiz</button>
+      <button class="btn prev" disabled="">
+        <i class="fas fa-arrow-left"></i> Previous
+      </button>
+      <button class="btn next">
+        Next <i class="fas fa-arrow-right"></i>
+      </button>
+    </div>
+    
+  </div>
+  <!-- Side Panel for Navigation -->
+  <div class="side-panel">
+    <h3><i class="fas fa-list-ol"></i> Questions</h3>
+    <div class="questions-navigation">
+      <!-- Dynamically populated question navigation buttons -->
+    </div>
+  </div>
+  <!-- End Screen -->
+  <div class="end-screen hide">
+    <div class="result-card">
+      <h1 class="heading">Quiz Completed!</h1>
+      <p class="subheading">Here's how you performed</p>
+      <div class="result-visual">
+        <div class="medal-container" id="medal-container"></div>
+        <div class="score-circle">
+          <svg class="progress-ring" height="160" width="160">
+            <circle class="progress-ring-circle" cx="80" cy="80" fill="transparent" r="72" stroke-width="8"></circle>
+          </svg>
+          <div class="score-display">
+            <span class="final-score">0</span>
+            <span class="total-score">/10</span>
+          </div>
+        </div>
+      </div>
+      <div class="result-feedback">
+        <h3 class="feedback-title" id="feedback-title">Good Effort!</h3>
+        <p class="feedback-text" id="feedback-text">
+          You're on the right track! Keep practicing to improve your score.
+        </p>
+      </div>
+      <div class="result-actions">
+        <button class="btn review">
+          <i class="fas fa-clipboard-check"></i> Review Answers
+        </button>
+        <button class="btn restart">
+          <i class="fas fa-redo"></i> Play Again
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Review Screen -->
+  <div class="review-screen hide">
+    <h2><i class="fas fa-clipboard-list"></i> Review Answers</h2>
+    <div class="review-container"></div>
+    <button class="btn restart">
+      <i class="fas fa-redo"></i> Play Again
+    </button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

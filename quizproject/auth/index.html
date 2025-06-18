@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Quiz Master - Login</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Russo+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <!-- Circular Animation Element -->
+    <div class="toggle-circle" id="toggleCircle"></div>
+    
+    <!-- Floating Particles -->
+    <div id="particles"></div>
+    
+    <div class="game-header">
+      <h1 class="game-title">APTIGEN</h1>
+      <p class="game-subtitle">TEST YOUR KNOWLEDGE</p>
+    </div>
+    
+    <div class="form-container">
+      <div class="form-wrapper" id="formWrapper">
+        <!-- Login Form -->
+        <div class="game-card login-card">
+          <h2 class="form-title">PLAYER LOGIN</h2>
+          <div class="level-indicator">ENTER YOUR CREDENTIALS</div>
+          
+          <form action="login.php" method="POST">
+            <div class="input-group">
+              <label class="input-label">EMAIL ADDRESS</label>
+              <input type="email" name="email" class="input-field" placeholder="Enter your email" required>
+              <div class="error-message" id="email-error"></div>
+            </div>
+            
+            <div class="input-group">
+              <label class="input-label">PASSWORD</label>
+              <input type="password" name="password" class="input-field" placeholder="Enter your password" required>
+              <div class="error-message" id="password-error"></div>
+            </div>
+            
+            <button type="submit" class="btn">LOGIN</button>
+          </form>
+          
+          <div class="form-footer">
+            NEW PLAYER? <a href="#" id="show-register">CREATE ACCOUNT</a>
+          </div>
+        </div>
+        
+        <!-- Register Form -->
+        <div class="game-card register-card">
+          <h2 class="form-title">NEW PLAYER</h2>
+          <div class="level-indicator">CREATE YOUR ACCOUNT</div>
+          
+          <form action="register.php" method="POST">
+            <div class="input-group">
+              <label class="input-label">USERNAME</label>
+              <input type="text" name="username" class="input-field" placeholder="Choose your username" required>
+              <div class="error-message" id="username-error"></div>
+            </div>
+            
+            <div class="input-group">
+              <label class="input-label">EMAIL ADDRESS</label>
+              <input type="email" name="email" class="input-field" placeholder="Enter your email" required>
+              <div class="error-message" id="reg-email-error"></div>
+            </div>
+            
+            <div class="input-group">
+              <label class="input-label">PASSWORD</label>
+              <input type="password" name="password" class="input-field" placeholder="Create a password" required>
+              <div class="error-message" id="reg-password-error"></div>
+            </div>
+            
+            <button type="submit" class="btn">REGISTER</button>
+          </form>
+          
+          <div class="form-footer">
+            ALREADY HAVE AN ACCOUNT? <a href="#" id="show-login">SIGN IN</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<title>aptigen</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<!-- Category Screen -->
+<div class="category-screen">
+<div class="category-header">
+<h1 class="heading">Choose a Category</h1>
+<p class="subheading">Select a topic to test your knowledge</p>
+</div>
+<div class="category-grid">
+<div class="category-box" data-id="9">
+<i class="fas fa-brain category-icon"></i>
+<span>General Knowledge</span>
+</div>
+<div class="category-box" data-id="10">
+<i class="fas fa-book category-icon"></i>
+<span>Books</span>
+</div>
+<div class="category-box" data-id="11">
+<i class="fas fa-film category-icon"></i>
+<span>Films</span>
+</div>
+<div class="category-box" data-id="12">
+<i class="fas fa-music category-icon"></i>
+<span>Music</span>
+</div>
+<div class="category-box" data-id="14">
+<i class="fas fa-tv category-icon"></i>
+<span>Television</span>
+</div>
+<div class="category-box" data-id="18">
+<i class="fas fa-laptop-code category-icon"></i>
+<span>Computers</span>
+</div>
+<div class="category-box" data-id="21">
+<i class="fas fa-running category-icon"></i>
+<span>Sports</span>
+</div>
+<div class="category-box" data-id="23">
+<i class="fas fa-landmark category-icon"></i>
+<span>History</span>
+</div>
+</div>
+</div>
+<!-- Start Screen -->
+<div class="start-screen hide">
+<div class="quiz-settings-card">
+<h1 class="heading">Quiz Settings</h1>
+<p class="subheading">Customize your quiz experience</p>
+<div class="settings-grid">
+<div class="setting-group">
+<label for="num-questions">
+<i class="fas fa-list-ol setting-icon"></i>
+                Number of Questions:
+              </label>
+<select class="styled-select" id="num-questions">
+<option value="5">5</option>
+<option selected="" value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="30">30</option>
+<option value="40">40</option>
+<option value="50">50</option>
+</select>
+</div>
+<div class="setting-group">
+<label for="category">
+<i class="fas fa-tags setting-icon"></i>
+                Select Category:
+              </label>
+<select class="styled-select" id="category">
+<option value="">Any Category</option>
+<option value="9">General Knowledge</option>
+<option value="10">Books</option>
+<option value="11">Films</option>
+<option value="12">Music</option>
+<option value="14">Television</option>
+<option value="18">Computers</option>
+<option value="21">Sports</option>
+<option value="23">History</option>
+</select>
+</div>
+<div class="setting-group">
+<label for="difficulty">
+<i class="fas fa-chart-line setting-icon"></i>
+                Select Difficulty:
+              </label>
+<select class="styled-select" id="difficulty">
+<option value="">Any Difficulty</option>
+<option value="easy">Easy</option>
+<option value="medium">Medium</option>
+<option value="hard">Hard</option>
+</select>
+</div>
+<div class="setting-group">
+<label for="time">
+<i class="fas fa-clock setting-icon"></i>
+                Time Per Question:
+              </label>
+<select class="styled-select" id="time">
+<option value="10">10 seconds</option>
+<option value="15">15 seconds</option>
+<option selected="" value="20">20 seconds</option>
+<option value="25">25 seconds</option>
+<option value="30">30 seconds</option>
+<option value="60">60 seconds</option>
+</select>
+</div>
+</div>
+<button class="btn start">
+<i class="fas fa-play"></i> Start Quiz
+          </button>
+</div>
+</div>
+<!-- Quiz Screen -->
+<div class="quiz hide">
+<div class="quiz-header">
+<div class="timer">
+<div class="progress">
+<div class="progress-bar"></div>
+<span class="progress-text"></span>
+</div>
+</div>
+</div>
+<div class="question-wrapper">
+<div class="number">
+Question <span class="current">1</span>
+<span class="total">/10</span>
+</div>
+<div class="question">This is a question?</div>
+</div>
+<div class="answer-wrapper">
+<!-- Answers will be injected by JS -->
+</div>
+<div class="quiz-footer">
+<button class="btn submit" disabled="">
+<i class="fas fa-paper-plane"></i> Submit
+          </button>
+<button class="btn next">
+<i class="fas fa-arrow-right"></i> Next
+          </button>
+</div>
+</div>
+<!-- End Screen -->
+<div class="end-screen hide">
+<div class="result-card">
+<h1 class="heading">Quiz Completed!</h1>
+<p class="subheading">Here's how you performed</p>
+<div class="result-visual">
+<div class="medal-container" id="medal-container">
+<!-- Medal will be inserted here based on score -->
+</div>
+<div class="score-circle">
+<svg class="progress-ring" height="160" width="160">
+<circle class="progress-ring-circle" cx="80" cy="80" fill="transparent" r="72" stroke-width="8"></circle>
+</svg>
+<div class="score-display">
+<span class="final-score">0</span>
+<span class="total-score">/10</span>
+</div>
+</div>
+</div>
+<div class="result-feedback">
+<h3 class="feedback-title" id="feedback-title">Good Effort!</h3>
+<p class="feedback-text" id="feedback-text">
+              You're on the right track! Keep practicing to improve your score.
+            </p>
+</div>
+<div class="result-actions">
+<button class="btn restart">
+<i class="fas fa-redo"></i> Try Again
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Confetti library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

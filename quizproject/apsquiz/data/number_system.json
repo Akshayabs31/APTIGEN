@@ -1,0 +1,230 @@
+[
+    {
+        "question": "What is the least number that must be added to 4321 to make it divisible by 9?",
+        "options": ["3", "5", "7", "9"],
+        "answer": "3",
+        "explanation": "A number is divisible by 9 if the sum of its digits is divisible by 9. Sum of digits of 4321 = 4 + 3 + 2 + 1 = 10. To make it divisible by 9, we need to add 3 (10 + 3 = 13, the next multiple of 9)."
+    },
+    {
+        "question": "What is the least number that should be subtracted from 1000 to make it a perfect square?",
+        "options": ["31", "39", "40", "49"],
+        "answer": "31",
+        "explanation": "The nearest perfect square less than 1000 is 31^2 = 961. The difference is 1000 - 961 = 31."
+    },
+    {
+        "question": "What is the smallest 4-digit number divisible by 15?",
+        "options": ["1005", "1010", "1020", "1030"],
+        "answer": "1005",
+        "explanation": "The smallest 4-digit number is 1000. Dividing 1000 by 15 gives a remainder of 5. Subtracting this from 1000, the result is 1005."
+    },
+    {
+        "question": "What is the remainder when 2^31 is divided by 5?",
+        "options": ["1", "2", "3", "4"],
+        "answer": "1",
+        "explanation": "Powers of 2 modulo 5 follow a cycle: 2, 4, 3, 1. Since 31 ≡ 3 (mod 4), the remainder is the 3rd term in the cycle, which is 1."
+    },
+    {
+        "question": "Find the smallest number which, when divided by 12 and 16, leaves a remainder of 7.",
+        "options": ["199", "207", "215", "223"],
+        "answer": "199",
+        "explanation": "The LCM of 12 and 16 is 48. A number divisible by both 12 and 16 is 48k. Adding the remainder 7 gives 48k + 7. The smallest such number is 48 × 4 + 7 = 199."
+    },
+    {
+        "question": "What is the sum of all prime numbers between 10 and 20?",
+        "options": ["30", "42", "48", "36"],
+        "answer": "42",
+        "explanation": "The prime numbers between 10 and 20 are 11, 13, 17, and 19. Their sum is 11 + 13 + 17 + 19 = 42."
+    },
+    {
+        "question": "What is the largest 2-digit number divisible by 7?",
+        "options": ["91", "98", "84", "77"],
+        "answer": "98",
+        "explanation": "The largest 2-digit number is 99. Dividing 99 by 7 gives a quotient of 14 and remainder 1. Subtracting the remainder, 99 - 1 = 98, which is divisible by 7."
+    },
+    {
+        "question": "What is the LCM of 18, 24, and 30?",
+        "options": ["360", "180", "240", "120"],
+        "answer": "360",
+        "explanation": "The prime factorization of 18 = 2 × 3^2, 24 = 2^3 × 3, and 30 = 2 × 3 × 5. The LCM is 2^3 × 3^2 × 5 = 360."
+    },
+    {
+        "question": "The sum of three consecutive odd numbers is 99. What is the smallest number?",
+        "options": ["31", "33", "35", "37"],
+        "answer": "31",
+        "explanation": "Let the three consecutive odd numbers be x, x+2, and x+4. Their sum is x + (x+2) + (x+4) = 99. Solving, 3x + 6 = 99 → x = 31."
+    },
+    {
+        "question": "What is the remainder when 123456789 is divided by 9?",
+        "options": ["0", "1", "3", "6"],
+        "answer": "0",
+        "explanation": "A number is divisible by 9 if the sum of its digits is divisible by 9. Sum of digits of 123456789 = 45, which is divisible by 9. Hence, the remainder is 0."
+    },
+    {
+        "question": "Find the smallest number which, when divided by 3, 4, and 5, leaves a remainder of 2.",
+        "options": ["62", "74", "77", "82"],
+        "answer": "62",
+        "explanation": "The LCM of 3, 4, and 5 is 60. A number divisible by all three is 60k. Adding the remainder 2 gives 60k + 2. The smallest such number is 60 × 1 + 2 = 62."
+    },
+    {
+        "question": "What is the difference between the largest 3-digit number and the smallest 2-digit number?",
+        "options": ["891", "890", "889", "900"],
+        "answer": "891",
+        "explanation": "The largest 3-digit number is 999, and the smallest 2-digit number is 10. The difference is 999 - 10 = 891."
+    },
+    {
+        "question": "What is the sum of the first 10 natural numbers?",
+        "options": ["55", "45", "60", "50"],
+        "answer": "55",
+        "explanation": "Sum of the first n natural numbers is given by n(n+1)/2. For n = 10, the sum is 10 × 11 / 2 = 55."
+    },
+    {
+        "question": "What is the product of all prime numbers less than 10?",
+        "options": ["210", "120", "105", "231"],
+        "answer": "210",
+        "explanation": "The prime numbers less than 10 are 2, 3, 5, and 7. Their product is 2 × 3 × 5 × 7 = 210."
+    },
+    {
+        "question": "What is the HCF of 144 and 216?",
+        "options": ["36", "48", "72", "96"],
+        "answer": "72",
+        "explanation": "The prime factorization of 144 = 2^4 × 3^2 and 216 = 2^3 × 3^3. The HCF is 2^3 × 3^2 = 72."
+    },
+    {
+        "question": "What is the remainder when 5^20 is divided by 6?",
+        "options": ["1", "3", "5", "0"],
+        "answer": "1",
+        "explanation": "Powers of 5 modulo 6 always leave a remainder of 1, as 5 ≡ -1 (mod 6)."
+    },
+    {
+        "question": "If the sum of two numbers is 36 and their HCF is 9, what is their LCM?",
+        "options": ["36", "72", "81", "108"],
+        "answer": "72",
+        "explanation": "The product of two numbers = HCF × LCM. Let the numbers be 9a and 9b, where a and b are co-prime. Since 9a + 9b = 36, a+b = 4. Hence, LCM = 36 × 2 = 72."
+    },
+    {
+        "question": "What is the unit digit of 7^45?",
+        "options": ["1", "3", "7", "9"],
+        "answer": "7",
+        "explanation": "The unit digits of powers of 7 follow a cycle: 7, 9, 3, 1. Since 45 ≡ 1 (mod 4), the unit digit is the 1st term, which is 7."
+    },
+            {
+            "question": "What is the sum of all even numbers between 1 and 50?",
+            "options": ["624", "650", "600", "620"],
+            "answer": "624",
+            "explanation": "The even numbers between 1 and 50 are 2, 4, 6, ..., 50. This is an arithmetic sequence with first term = 2, last term = 50, and common difference = 2. The number of terms is (50 - 2)/2 + 1 = 25. Sum = n/2 × (first term + last term) = 25/2 × (2 + 50) = 25 × 26 = 624."
+        },
+        {
+            "question": "What is the remainder when 123456 is divided by 11?",
+            "options": ["1", "3", "5", "7"],
+            "answer": "7",
+            "explanation": "To find the remainder when a number is divided by 11, calculate the difference between the sum of its digits in odd positions and the sum of its digits in even positions. For 123456: (1+3+5) - (2+4+6) = 9 - 12 = -3. Adding 11, the remainder is 7."
+        },
+        {
+            "question": "What is the smallest 5-digit number divisible by 12?",
+            "options": ["10008", "10020", "10032", "10044"],
+            "answer": "10008",
+            "explanation": "The smallest 5-digit number is 10000. Dividing 10000 by 12 gives a remainder of 8. Subtracting this remainder from 10000, we get the smallest number divisible by 12: 10000 + (12 - 8) = 10008."
+        },
+        {
+            "question": "What is the largest 3-digit number divisible by 13?",
+            "options": ["988", "999", "975", "986"],
+            "answer": "988",
+            "explanation": "The largest 3-digit number is 999. Dividing 999 by 13 gives a remainder of 11. Subtracting the remainder, 999 - 11 = 988, which is divisible by 13."
+        },
+        {
+            "question": "Find the smallest number which, when divided by 8, 9, and 12, leaves a remainder of 5.",
+            "options": ["77", "113", "125", "149"],
+            "answer": "77",
+            "explanation": "The LCM of 8, 9, and 12 is 72. A number divisible by all three is 72k. Adding the remainder 5 gives 72k + 5. The smallest such number is 72 × 1 + 5 = 77."
+        },
+        {
+            "question": "The sum of three consecutive multiples of 5 is 225. What is the smallest multiple?",
+            "options": ["70", "75", "80", "85"],
+            "answer": "70",
+            "explanation": "Let the three consecutive multiples of 5 be 5x, 5x+5, and 5x+10. Their sum is 15x + 15 = 225. Simplifying, x = 15. The smallest multiple is 5x = 5 × 15 = 70."
+        },
+        {
+            "question": "What is the product of the least common multiple (LCM) and highest common factor (HCF) of 18 and 30?",
+            "options": ["360", "540", "270", "450"],
+            "answer": "540",
+            "explanation": "For any two numbers, the product of their LCM and HCF is equal to the product of the numbers. LCM × HCF = 18 × 30 = 540."
+        },
+        {
+            "question": "What is the remainder when 4^50 is divided by 6?",
+            "options": ["0", "2", "4", "6"],
+            "answer": "4",
+            "explanation": "Powers of 4 modulo 6 follow a pattern: 4, 4, 4, ... Since the remainder is always 4, the answer is 4."
+        },
+        {
+            "question": "How many numbers between 1 and 100 are divisible by both 3 and 4?",
+            "options": ["8", "10", "12", "15"],
+            "answer": "8",
+            "explanation": "Numbers divisible by both 3 and 4 are divisible by LCM(3, 4) = 12. The numbers between 1 and 100 divisible by 12 are: 12, 24, 36, ..., 96. This is an arithmetic sequence with common difference 12. The number of terms is (96 - 12)/12 + 1 = 8."
+        },
+        {
+            "question": "What is the sum of all prime numbers less than 20?",
+            "options": ["41", "77", "100", "60"],
+            "answer": "77",
+            "explanation": "The prime numbers less than 20 are 2, 3, 5, 7, 11, 13, 17, and 19. Their sum is 2 + 3 + 5 + 7 + 11 + 13 + 17 + 19 = 77."
+        },
+        {
+            "question": "What is the HCF of 84 and 108?",
+            "options": ["12", "18", "24", "36"],
+            "answer": "12",
+            "explanation": "The prime factorization of 84 = 2^2 × 3 × 7 and 108 = 2^2 × 3^3. The HCF is 2^2 × 3 = 12."
+        },
+        {
+            "question": "What is the unit digit of 3^100?",
+            "options": ["1", "3", "7", "9"],
+            "answer": "9",
+            "explanation": "The unit digits of powers of 3 follow a cycle: 3, 9, 7, 1. Since 100 ≡ 0 (mod 4), the unit digit is the 4th term, which is 9."
+        },
+        {
+            "question": "What is the sum of the first 20 odd numbers?",
+            "options": ["200", "380", "400", "420"],
+            "answer": "400",
+            "explanation": "The sum of the first n odd numbers is n^2. For n = 20, the sum is 20^2 = 400."
+        },
+        {
+            "question": "A number is divisible by both 8 and 12. By what other number must it also be divisible?",
+            "options": ["24", "48", "16", "64"],
+            "answer": "24",
+            "explanation": "A number divisible by both 8 and 12 must also be divisible by their LCM. LCM(8, 12) = 24."
+        },
+        {
+            "question": "What is the difference between the greatest 4-digit number and the smallest 3-digit number?",
+            "options": ["8910", "8999", "9000", "8990"],
+            "answer": "9000",
+            "explanation": "The greatest 4-digit number is 9999, and the smallest 3-digit number is 100. The difference is 9999 - 100 = 9000."
+        },
+        {
+            "question": "What is the remainder when 10^50 is divided by 9?",
+            "options": ["1", "2", "8", "0"],
+            "answer": "1",
+            "explanation": "10 ≡ 1 (mod 9). Therefore, 10^50 ≡ 1^50 ≡ 1 (mod 9). The remainder is 1."
+        },
+        {
+            "question": "The product of two numbers is 240 and their HCF is 4. What is their LCM?",
+            "options": ["60", "120", "240", "480"],
+            "answer": "60",
+            "explanation": "The product of two numbers = HCF × LCM. Therefore, LCM = Product / HCF = 240 / 4 = 60."
+        },
+        {
+            "question": "What is the sum of the first 15 multiples of 7?",
+            "options": ["735", "525", "455", "630"],
+            "answer": "735",
+            "explanation": "The multiples of 7 form an arithmetic sequence with first term = 7, common difference = 7, and number of terms = 15. Sum = n/2 × (first term + last term) = 15/2 × (7 + 105) = 735."
+        },
+        {
+            "question": "How many trailing zeroes are there in 50! (50 factorial)?",
+            "options": ["10", "11", "12", "14"],
+            "answer": "12",
+            "explanation": "Trailing zeroes are determined by the number of 5s in the prime factorization of 50!. Count the powers of 5: 50/5 + 50/25 = 10 + 2 = 12."
+        },
+        {
+            "question": "What is the greatest 4-digit number divisible by 15?",
+            "options": ["9990", "9960", "9955", "9985"],
+            "answer": "9990",
+            "explanation": "The greatest 4-digit number is 9999. Dividing 9999 by 15 gives a remainder of 9. Subtracting the remainder, 9999 - 9 = 9990, which is divisible by 15."
+        }
+    ]

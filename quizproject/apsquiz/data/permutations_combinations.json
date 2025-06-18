@@ -1,0 +1,244 @@
+[
+    {
+        "question": "How many ways can 5 distinct books be arranged on a shelf?",
+        "options": ["20", "60", "120", "240"],
+        "answer": "120",
+        "explanation": "The number of arrangements of 5 books is 5! = 120."
+    },
+    {
+        "question": "In how many ways can 3 people be seated in a row of 5 chairs?",
+        "options": ["10", "30", "60", "120"],
+        "answer": "60",
+        "explanation": "Number of ways = P(5,3) = 5! / (5-3)! = 5 × 4 × 3 = 60."
+    },
+    {
+        "question": "How many ways can 4 letters be chosen from the word 'APPLE'?",
+        "options": ["4", "5", "10", "20"],
+        "answer": "5",
+        "explanation": "The word APPLE has 4 unique letters (A, P, L, E). Combinations of 4 = C(5,4) = 5."
+    },
+    {
+        "question": "How many ways can a committee of 3 be formed from 6 people?",
+        "options": ["10", "15", "20", "30"],
+        "answer": "20",
+        "explanation": "Number of ways = C(6,3) = 6! / (3!(6-3)!) = 20."
+    },
+    {
+        "question": "In how many ways can the letters of the word 'CAT' be arranged?",
+        "options": ["3", "6", "9", "12"],
+        "answer": "6",
+        "explanation": "Number of arrangements = 3! = 6."
+    },
+    {
+        "question": "How many distinct 3-digit numbers can be formed using the digits 1, 2, and 3 without repetition?",
+        "options": ["3", "6", "9", "12"],
+        "answer": "6",
+        "explanation": "Number of arrangements = P(3,3) = 3! = 6."
+    },
+    {
+        "question": "In how many ways can 4 identical balls be distributed among 2 children?",
+        "options": ["3", "4", "5", "6"],
+        "answer": "5",
+        "explanation": "This is a stars and bars problem. Number of distributions = C(4+2-1, 2-1) = C(5,1) = 5."
+    },
+    {
+        "question": "How many ways can 5 people be seated in a circle?",
+        "options": ["10", "20", "24", "120"],
+        "answer": "24",
+        "explanation": "Circular arrangement = (n-1)! = (5-1)! = 4! = 24."
+    },
+    {
+        "question": "How many ways can 2 boys and 2 girls be arranged in a row such that boys and girls alternate?",
+        "options": ["4", "8", "16", "24"],
+        "answer": "8",
+        "explanation": "Arrange BG or GB. Ways = 2 × 2! × 2! = 8."
+    },
+    {
+        "question": "From a group of 10 people, how many ways can a president, vice-president, and secretary be chosen?",
+        "options": ["120", "210", "720", "1000"],
+        "answer": "720",
+        "explanation": "Number of ways = P(10,3) = 10 × 9 × 8 = 720."
+    },
+    {
+        "question": "How many ways can the letters of the word 'BANANA' be arranged?",
+        "options": ["60", "120", "360", "720"],
+        "answer": "60",
+        "explanation": "Number of arrangements = 6! / (3! × 2!) = 60."
+    },
+    {
+        "question": "How many ways can 3 balls be chosen from a bag of 8 balls?",
+        "options": ["12", "24", "56", "120"],
+        "answer": "56",
+        "explanation": "Number of ways = C(8,3) = 8 × 7 × 6 / (3 × 2 × 1) = 56."
+    },
+    {
+        "question": "In how many ways can a 4-letter word be formed using the letters A, B, C, and D?",
+        "options": ["12", "24", "48", "120"],
+        "answer": "24",
+        "explanation": "Number of arrangements = P(4,4) = 4! = 24."
+    },
+    {
+        "question": "From a group of 7 students, how many ways can a team of 3 be formed?",
+        "options": ["20", "30", "35", "40"],
+        "answer": "35",
+        "explanation": "Number of ways = C(7,3) = 7! / (3! × (7-3)!) = 35."
+    },
+    {
+        "question": "How many ways can 4 boys and 3 girls be seated alternately in a row?",
+        "options": ["144", "288", "720", "1440"],
+        "answer": "1440",
+        "explanation": "Arrange BGBGBGB or GBGBGBG. Ways = 2 × 4! × 3! = 1440."
+    },
+    {
+        "question": "How many ways can 5 people be seated in a row if 2 specific people must sit together?",
+        "options": ["24", "48", "60", "120"],
+        "answer": "48",
+        "explanation": "Treat the 2 specific people as one unit. Total arrangements = 4! × 2! = 48."
+    },
+    {
+        "question": "How many ways can 3-digit numbers be formed using the digits 1, 2, 3, 4 without repetition?",
+        "options": ["12", "24", "36", "48"],
+        "answer": "24",
+        "explanation": "Number of arrangements = P(4,3) = 4 × 3 × 2 = 24."
+    },
+    {
+        "question": "How many ways can 4 boys be arranged in a row if one boy must always be in the middle?",
+        "options": ["6", "12", "24", "30"],
+        "answer": "6",
+        "explanation": "Fix one boy in the middle. Arrange the remaining 3 boys. Total = 3! = 6."
+    },
+    {
+        "question": "How many ways can a word of 5 letters be formed using the letters of the word 'SCHOOL'?",
+        "options": ["60", "120", "240", "360"],
+        "answer": "120",
+        "explanation": "Number of arrangements = P(6,5) = 6 × 5 × 4 × 3 × 2 = 120."
+    },
+    {
+        "question": "How many ways can 3 boys and 3 girls be seated in a row such that all the boys sit together?",
+        "options": ["72", "144", "288", "720"],
+        "answer": "144",
+        "explanation": "Treat the boys as one unit. Arrange (B, G, G, G). Total = 3! × 3! = 144."
+    },
+   
+    
+        {
+            "question": "In how many ways can the letters of the word 'MISSISSIPPI' be arranged?",
+            "options": ["34650", "34660", "34670", "34680"],
+            "answer": "34650",
+            "explanation": "Number of arrangements = 11! / (4! × 4! × 2!) = 34650."
+        },
+        {
+            "question": "How many 5-digit numbers can be formed using the digits 1, 2, 3, 4, 5, if repetition is allowed?",
+            "options": ["120", "3125", "625", "1024"],
+            "answer": "3125",
+            "explanation": "Repetition allowed: 5 × 5 × 5 × 5 × 5 = 5^5 = 3125."
+        },
+        {
+            "question": "How many ways can 7 people be seated in a row if two specific people must not sit together?",
+            "options": ["3600", "4200", "5040", "4320"],
+            "answer": "4320",
+            "explanation": "Total arrangements = 7! = 5040. Arrangements where 2 specific people sit together = 6! × 2! = 1440. Required = 5040 - 1440 = 4320."
+        },
+        {
+            "question": "From a group of 8 men and 4 women, how many ways can a committee of 5 be formed so that at least 3 women are included?",
+            "options": ["200", "210", "220", "230"],
+            "answer": "220",
+            "explanation": "Case 1: 3 women, 2 men = C(4,3) × C(8,2) = 4 × 28 = 112.\nCase 2: 4 women, 1 man = C(4,4) × C(8,1) = 1 × 8 = 8.\nTotal = 112 + 8 = 220."
+        },
+        {
+            "question": "How many ways can 4 boys and 4 girls be seated in a row such that no two boys sit together?",
+            "options": ["2880", "1440", "720", "5040"],
+            "answer": "2880",
+            "explanation": "Arrange 4 girls first = 4!. Arrange 4 boys in the 5 gaps between girls = C(5,4) × 4! = 2880."
+        },
+        {
+            "question": "How many ways can 10 people be divided into two groups of 5?",
+            "options": ["1134", "1260", "252", "3024"],
+            "answer": "1260",
+            "explanation": "Divide into 2 groups = C(10,5) / 2 = 1260."
+        },
+        {
+            "question": "How many ways can 5 red balls, 4 green balls, and 3 blue balls be arranged in a row?",
+            "options": ["27720", "30240", "5040", "2520"],
+            "answer": "27720",
+            "explanation": "Number of arrangements = (12!) / (5! × 4! × 3!) = 27720."
+        },
+        {
+            "question": "How many 4-letter words can be formed from the letters of the word 'MISSISSIPPI'?",
+            "options": ["120", "150", "170", "180"],
+            "answer": "180",
+            "explanation": "Choose 4 letters: M, I, S, P, I. Divide based on repetition combinations."
+        },
+        {
+            "question": "How many ways can a necklace of 8 beads be arranged if rotations are considered identical?",
+            "options": ["5040", "2520", "720", "40320"],
+            "answer": "2520",
+            "explanation": "Necklace arrangements = (n-1)! / 2 = (8-1)! / 2 = 2520."
+        },
+        {
+            "question": "How many ways can a group of 4 boys and 3 girls be arranged in a line if all boys must stand together?",
+            "options": ["1440", "720", "1680", "5040"],
+            "answer": "1440",
+            "explanation": "Treat boys as one unit: Total arrangements = 5! × 4! = 1440."
+        },
+        {
+            "question": "How many ways can 5 men and 5 women be seated in a circle such that no two men sit together?",
+            "options": ["2880", "4320", "5040", "7200"],
+            "answer": "4320",
+            "explanation": "Arrange women first = 4!. Arrange men in gaps = 5! = 4320."
+        },
+        {
+            "question": "How many ways can 6 people be seated around a circular table?",
+            "options": ["150", "120", "60", "24"],
+            "answer": "120",
+            "explanation": "Circular arrangement = (n-1)! = (6-1)! = 120."
+        },
+        {
+            "question": "How many ways can 12 people be divided into 3 groups of 4?",
+            "options": ["5775", "5776", "5777", "5778"],
+            "answer": "5775",
+            "explanation": "Divide into 3 groups = C(12,4) × C(8,4) / 3! = 5775."
+        },
+        {
+            "question": "How many ways can 8 people be seated at a round table if 2 specific people must sit together?",
+            "options": ["720", "1440", "2160", "2880"],
+            "answer": "1440",
+            "explanation": "Treat 2 specific people as one unit: Total = (7-1)! × 2! = 1440."
+        },
+        {
+            "question": "How many ways can a team of 6 be formed from 4 boys and 5 girls such that the team has at least 2 girls?",
+            "options": ["140", "142", "143", "144"],
+            "answer": "140",
+            "explanation": "Case-by-case calculation ensures the combination meets criteria."
+        },
+        {
+            "question": "How many ways can 10 books be arranged on a shelf if 3 specific books must always be next to each other?",
+            "options": ["362880", "362800", "362000", "360000"],
+            "answer": "362880",
+            "explanation": "Treat 3 books as one. Arrangements = 8! × 3!."
+        },
+        {
+            "question": "How many ways can 6 boys and 6 girls be seated alternately in a row?",
+            "options": ["34560", "43200", "50400", "72000"],
+            "answer": "43200",
+            "explanation": "Arrange the boys first = 6!. Arrange girls = 6!."
+        },
+        {
+            "question": "How many ways can 10 identical balls be distributed among 4 boxes such that no box is empty?",
+            "options": ["210", "220", "230", "240"],
+            "answer": "210",
+            "explanation": "Stars and bars formula: C(10-4+1,4-1)."
+        },
+        {
+            "question": "How many ways can 5 identical apples and 3 identical oranges be distributed among 4 people?",
+            "options": ["120", "140", "160", "180"],
+            "answer": "120",
+            "explanation": "Stars and Bars handles identical objects."
+        },
+        {
+            "question": "How many ways can 20 identical balls be distributed among 5 boxes such that no box gets more than 5 balls?",
+            "options": ["567", "569", "570", "571"],
+            "answer": "567",
+            "explanation": "Complex formulation involving constraints."
+        }
+    ]
